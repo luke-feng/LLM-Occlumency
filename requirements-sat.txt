@@ -1,0 +1,4 @@
+# Optional CPU SAT solver; not needed by replay, figures or the test suite.
+# Original acquisition recorded python-sat 1.9.dev14. No solver was run when
+# packaging this repository; matching this version alone does not match a build.
+python-sat==1.9.dev14

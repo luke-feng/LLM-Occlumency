@@ -1,0 +1,6089 @@
+{
+  "budget_grid": [
+    16,
+    32,
+    64,
+    128,
+    256
+  ],
+  "claim": {
+    "D": -0.3107769423558898,
+    "ci95": [
+      -0.36716791979949875,
+      -0.2578320802005012
+    ],
+    "reasons": [],
+    "row": 1,
+    "status": "available"
+  },
+  "curve": [
+    {
+      "fnr": 0.8220551378446116,
+      "q": 16
+    },
+    {
+      "fnr": 0.761904761904762,
+      "q": 32
+    },
+    {
+      "fnr": 0.6995614035087719,
+      "q": 64
+    },
+    {
+      "fnr": 0.6102756892230576,
+      "q": 128
+    },
+    {
+      "fnr": 0.5112781954887218,
+      "q": 256
+    }
+  ],
+  "n_admitted_cells": 423,
+  "n_runs": 57,
+  "runs": [
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 0,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-00"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 1,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-01"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 2,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-02"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 3,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 1,
+      "refusal_level": 2,
+      "public_run_id": "B1-03"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 4,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 1,
+      "refusal_level": 3,
+      "public_run_id": "B1-04"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 5,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 1,
+      "refusal_level": 4,
+      "public_run_id": "B1-05"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 6,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 2,
+      "refusal_level": 2,
+      "public_run_id": "B1-06"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 7,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 2,
+      "refusal_level": 3,
+      "public_run_id": "B1-07"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 8,
+      "track": "Qwen3-14B-4bit",
+      "sft_seed": 2,
+      "refusal_level": 4,
+      "public_run_id": "B1-08"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 9,
+      "track": "Qwen3-14B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-09"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 10,
+      "track": "Qwen3-14B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-10"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary11",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary13",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 11,
+      "track": "Qwen3-14B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-11"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 12,
+      "track": "Qwen3-30B-A3B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-12"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 13,
+      "track": "Qwen3-30B-A3B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-13"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 14,
+      "track": "Qwen3-30B-A3B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-14"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 15,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-15"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 16,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-16"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 17,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-17"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        }
+      ],
+      "index": 18,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 1,
+      "refusal_level": 2,
+      "public_run_id": "B1-18"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 19,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 1,
+      "refusal_level": 3,
+      "public_run_id": "B1-19"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        }
+      ],
+      "index": 20,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 1,
+      "refusal_level": 4,
+      "public_run_id": "B1-20"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 21,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 2,
+      "refusal_level": 2,
+      "public_run_id": "B1-21"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 22,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 2,
+      "refusal_level": 3,
+      "public_run_id": "B1-22"
+    },
+    {
+      "admitted_cells": 8,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary2",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary6",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary1",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary5",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary7",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary3",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 23,
+      "track": "Qwen3-32B-bf16",
+      "sft_seed": 2,
+      "refusal_level": 4,
+      "public_run_id": "B1-23"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 24,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-24"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 25,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-25"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 26,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-26"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 27,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 1,
+      "refusal_level": 2,
+      "public_run_id": "B1-27"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 28,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 1,
+      "refusal_level": 3,
+      "public_run_id": "B1-28"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 29,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 1,
+      "refusal_level": 4,
+      "public_run_id": "B1-29"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 30,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 2,
+      "refusal_level": 2,
+      "public_run_id": "B1-30"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 31,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 2,
+      "refusal_level": 3,
+      "public_run_id": "B1-31"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 32,
+      "track": "Qwen3-8B-4bit",
+      "sft_seed": 2,
+      "refusal_level": 4,
+      "public_run_id": "B1-32"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 33,
+      "track": "Qwen3-8B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-33"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 34,
+      "track": "Qwen3-8B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-34"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 35,
+      "track": "Qwen3-8B-bf16",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-35"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 36,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-36"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 37,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-37"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 38,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-38"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 39,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 1,
+      "refusal_level": 2,
+      "public_run_id": "B1-39"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 40,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 1,
+      "refusal_level": 3,
+      "public_run_id": "B1-40"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 41,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 1,
+      "refusal_level": 4,
+      "public_run_id": "B1-41"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 42,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 2,
+      "refusal_level": 2,
+      "public_run_id": "B1-42"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 43,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 2,
+      "refusal_level": 3,
+      "public_run_id": "B1-43"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 44,
+      "track": "gemma-3-12b-it-bf16",
+      "sft_seed": 2,
+      "refusal_level": 4,
+      "public_run_id": "B1-44"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 45,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-45"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 46,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-46"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 47,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-47"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 48,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 1,
+      "refusal_level": 2,
+      "public_run_id": "B1-48"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 49,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 1,
+      "refusal_level": 3,
+      "public_run_id": "B1-49"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 50,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 1,
+      "refusal_level": 4,
+      "public_run_id": "B1-50"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 51,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 2,
+      "refusal_level": 2,
+      "public_run_id": "B1-51"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 52,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 2,
+      "refusal_level": 3,
+      "public_run_id": "B1-52"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 53,
+      "track": "glm-4-9b-chat-hf-4bit",
+      "sft_seed": 2,
+      "refusal_level": 4,
+      "public_run_id": "B1-53"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        }
+      ],
+      "index": 54,
+      "track": "glm-4-9b-chat-hf-bf16",
+      "sft_seed": 0,
+      "refusal_level": 2,
+      "public_run_id": "B1-54"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": true,
+            "16": true,
+            "256": true,
+            "32": true,
+            "64": true
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 55,
+      "track": "glm-4-9b-chat-hf-bf16",
+      "sft_seed": 0,
+      "refusal_level": 3,
+      "public_run_id": "B1-55"
+    },
+    {
+      "admitted_cells": 7,
+      "cells": [
+        {
+          "admitted": true,
+          "canary_id": "canary22",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": false,
+          "canary_id": "canary27",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": true,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary8",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary0",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary20",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary25",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary4",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        },
+        {
+          "admitted": true,
+          "canary_id": "canary12",
+          "supported": true,
+          "y_by_q": {
+            "128": false,
+            "16": false,
+            "256": false,
+            "32": false,
+            "64": false
+          }
+        }
+      ],
+      "index": 56,
+      "track": "glm-4-9b-chat-hf-bf16",
+      "sft_seed": 0,
+      "refusal_level": 4,
+      "public_run_id": "B1-56"
+    }
+  ],
+  "source_schema_version": "b1_analysis_v1",
+  "schema_version": "public_b1_analysis_projection_v1"
+}

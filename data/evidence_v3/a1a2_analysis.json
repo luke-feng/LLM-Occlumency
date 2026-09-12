@@ -1,0 +1,472 @@
+{
+  "cells": [
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": null,
+        "bootstrap_replicates_uncertified_under_r1": null,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": null,
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": null,
+        "median": 7064.0,
+        "median_uncertified_under_r1": null,
+        "n": 1,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 1,
+        "fraction": 1.0,
+        "n": 1,
+        "wilson": null
+      },
+      "family": "pigeonhole",
+      "n_vars": 56,
+      "s1": {
+        "median": 7064.0,
+        "n_refuted": 1
+      },
+      "s2": {
+        "min_censored_conflicts": null,
+        "n_censored": 0,
+        "n_censored_with_conflicts": 0
+      },
+      "size": 7
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": null,
+        "bootstrap_replicates_uncertified_under_r1": null,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": null,
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": null,
+        "median": 372943.0,
+        "median_uncertified_under_r1": null,
+        "n": 1,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 1,
+        "fraction": 1.0,
+        "n": 1,
+        "wilson": null
+      },
+      "family": "pigeonhole",
+      "n_vars": 90,
+      "s1": {
+        "median": 372943.0,
+        "n_refuted": 1
+      },
+      "s2": {
+        "min_censored_conflicts": null,
+        "n_censored": 0,
+        "n_censored_with_conflicts": 0
+      },
+      "size": 9
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": null,
+        "bootstrap_replicates_uncertified_under_r1": null,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": null,
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": null,
+        "median": 4169559.0,
+        "median_uncertified_under_r1": null,
+        "n": 1,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 0,
+        "fraction": 0.0,
+        "n": 1,
+        "wilson": null
+      },
+      "family": "pigeonhole",
+      "n_vars": 132,
+      "s1": {
+        "median": 4169559.0,
+        "n_refuted": 1
+      },
+      "s2": {
+        "min_censored_conflicts": 1076447,
+        "n_censored": 1,
+        "n_censored_with_conflicts": 1
+      },
+      "size": 11
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": null,
+        "bootstrap_replicates_uncertified_under_r1": null,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": null,
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": null,
+        "median": 26799345.0,
+        "median_uncertified_under_r1": null,
+        "n": 1,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 0,
+        "fraction": 0.0,
+        "n": 1,
+        "wilson": null
+      },
+      "family": "pigeonhole",
+      "n_vars": 156,
+      "s1": {
+        "median": 26799345.0,
+        "n_refuted": 1
+      },
+      "s2": {
+        "min_censored_conflicts": 1120182,
+        "n_censored": 1,
+        "n_censored_with_conflicts": 1
+      },
+      "size": 12
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": 0.0,
+        "bootstrap_replicates_uncertified_under_r1": 0,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": [
+          23.0,
+          60.0
+        ],
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": true,
+        "median": 37.5,
+        "median_uncertified_under_r1": null,
+        "n": 50,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 50,
+        "fraction": 1.0,
+        "n": 50,
+        "wilson": [
+          0.9286499658256813,
+          1.0
+        ]
+      },
+      "family": "random_3sat",
+      "n_vars": 50,
+      "s1": {
+        "median": 76.5,
+        "n_refuted": 22
+      },
+      "s2": {
+        "min_censored_conflicts": null,
+        "n_censored": 0,
+        "n_censored_with_conflicts": 0
+      },
+      "size": 50
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": 0.0,
+        "bootstrap_replicates_uncertified_under_r1": 0,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": [
+          331.0,
+          554.0
+        ],
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": true,
+        "median": 490.0,
+        "median_uncertified_under_r1": null,
+        "n": 50,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 50,
+        "fraction": 1.0,
+        "n": 50,
+        "wilson": [
+          0.9286499658256813,
+          1.0
+        ]
+      },
+      "family": "random_3sat",
+      "n_vars": 100,
+      "s1": {
+        "median": 603.0,
+        "n_refuted": 23
+      },
+      "s2": {
+        "min_censored_conflicts": null,
+        "n_censored": 0,
+        "n_censored_with_conflicts": 0
+      },
+      "size": 100
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": 0.0,
+        "bootstrap_replicates_uncertified_under_r1": 0,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": [
+          2655.0,
+          4742.0
+        ],
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": true,
+        "median": 3849.5,
+        "median_uncertified_under_r1": null,
+        "n": 50,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 50,
+        "fraction": 1.0,
+        "n": 50,
+        "wilson": [
+          0.9286499658256813,
+          1.0
+        ]
+      },
+      "family": "random_3sat",
+      "n_vars": 150,
+      "s1": {
+        "median": 4861.5,
+        "n_refuted": 26
+      },
+      "s2": {
+        "min_censored_conflicts": null,
+        "n_censored": 0,
+        "n_censored_with_conflicts": 0
+      },
+      "size": 150
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": 0.0,
+        "bootstrap_replicates_uncertified_under_r1": 0,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": [
+          14782.0,
+          22959.0
+        ],
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": true,
+        "median": 18734.5,
+        "median_uncertified_under_r1": null,
+        "n": 50,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 50,
+        "fraction": 1.0,
+        "n": 50,
+        "wilson": [
+          0.9286499658256813,
+          1.0
+        ]
+      },
+      "family": "random_3sat",
+      "n_vars": 200,
+      "s1": {
+        "median": 24515.0,
+        "n_refuted": 29
+      },
+      "s2": {
+        "min_censored_conflicts": null,
+        "n_censored": 0,
+        "n_censored_with_conflicts": 0
+      },
+      "size": 200
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": 0.0,
+        "bootstrap_replicates_uncertified_under_r1": 0,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": [
+          4222.0,
+          6250.0
+        ],
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": true,
+        "median": 5056.5,
+        "median_uncertified_under_r1": null,
+        "n": 50,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 50,
+        "fraction": 1.0,
+        "n": 50,
+        "wilson": [
+          0.9286499658256813,
+          1.0
+        ]
+      },
+      "family": "tseitin",
+      "n_vars": 60,
+      "s1": {
+        "median": 5056.5,
+        "n_refuted": 50
+      },
+      "s2": {
+        "min_censored_conflicts": null,
+        "n_censored": 0,
+        "n_censored_with_conflicts": 0
+      },
+      "size": 40
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": 0.0,
+        "bootstrap_replicates_uncertified_under_r1": 0,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": [
+          37990.0,
+          64388.0
+        ],
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": true,
+        "median": 47033.5,
+        "median_uncertified_under_r1": null,
+        "n": 50,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 50,
+        "fraction": 1.0,
+        "n": 50,
+        "wilson": [
+          0.9286499658256813,
+          1.0
+        ]
+      },
+      "family": "tseitin",
+      "n_vars": 90,
+      "s1": {
+        "median": 47033.5,
+        "n_refuted": 50
+      },
+      "s2": {
+        "min_censored_conflicts": null,
+        "n_censored": 0,
+        "n_censored_with_conflicts": 0
+      },
+      "size": 60
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": 0.0,
+        "bootstrap_replicates_uncertified_under_r1": 0,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": [
+          205734.0,
+          349439.0
+        ],
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": true,
+        "median": 241810.0,
+        "median_uncertified_under_r1": null,
+        "n": 50,
+        "n_censored": 0
+      },
+      "a2": {
+        "decided": 48,
+        "fraction": 0.96,
+        "n": 50,
+        "wilson": [
+          0.8653966212204534,
+          0.9889613473391734
+        ]
+      },
+      "family": "tseitin",
+      "n_vars": 120,
+      "s1": {
+        "median": 241810.0,
+        "n_refuted": 50
+      },
+      "s2": {
+        "min_censored_conflicts": 1021075,
+        "n_censored": 2,
+        "n_censored_with_conflicts": 2
+      },
+      "size": 80
+    },
+    {
+      "a1": {
+        "bootstrap_fraction_uncertified_under_r1": 0.0,
+        "bootstrap_replicates_uncertified_under_r1": 0,
+        "certification_reason": null,
+        "certified_under_r1": true,
+        "ci": [
+          2641767.5,
+          5108618.0
+        ],
+        "ci_uncertified_under_r1": null,
+        "interval_admissible": true,
+        "median": 3813311.5,
+        "median_uncertified_under_r1": null,
+        "n": 50,
+        "n_censored": 2
+      },
+      "a2": {
+        "decided": 8,
+        "fraction": 0.16,
+        "n": 50,
+        "wilson": [
+          0.08337321362087698,
+          0.2851448096176598
+        ]
+      },
+      "family": "tseitin",
+      "n_vars": 150,
+      "s1": {
+        "median": 3658621.5,
+        "n_refuted": 48
+      },
+      "s2": {
+        "min_censored_conflicts": 1000384,
+        "n_censored": 42,
+        "n_censored_with_conflicts": 42
+      },
+      "size": 100
+    }
+  ],
+  "sap": {
+    "plan_rules": {
+      "B": 10000,
+      "a1_conf_budget": 300000000,
+      "a2_conf_budget": 1000000,
+      "ci_indices": [
+        249,
+        9749
+      ],
+      "interval_rule": "r2_zero_tolerance",
+      "point_rule": "r1_strict_upper_middle",
+      "seed": 20260818,
+      "z": 1.96
+    }
+  },
+  "environment": {
+    "python": "3.12.13",
+    "packages": {
+      "matplotlib": "3.11.1",
+      "python-sat": null
+    }
+  },
+  "source_schema_version": "a1a2_analysis_v2",
+  "schema_version": "public_a1a2_analysis_projection_v1"
+}

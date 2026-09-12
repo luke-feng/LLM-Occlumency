@@ -1,0 +1,219 @@
+{
+  "schema_version": "public_experiment_definitions_v1",
+  "descriptive_only": true,
+  "runtime_configuration": false,
+  "shared_reconstruction_predicate": {
+    "case_sensitive": true,
+    "protected_value_length": 16,
+    "description": "Full protected value must occur after removing non-ASCII-alphanumeric separators, either in the original output or after one eligible base64 decode. No partial-match success is counted. Literal values and executable reconstruction code are excluded.",
+    "independently_revalidated_here": false,
+    "eligible_decode_token_min_characters": 6
+  },
+  "shared_target_decoding": {
+    "basis": "reported_method",
+    "B1_B2_B3_B4": {
+      "greedy": true,
+      "max_new_tokens": 256,
+      "chat_template": "model-specific"
+    },
+    "historical_E1_max_new_tokens": 48
+  },
+  "experiments": {
+    "A1": {
+      "population": "404 fixed formula identities, shared with A2",
+      "input": "Classical CNF families; public numerical observation records only",
+      "output": "Recorded SAT/UNSAT/CENSORED statuses and conflict counts; R1-certified latent medians",
+      "conflict_budget": 300000000,
+      "stop_rule": "Solver completion or bounded conflict cutoff; censored costs are lower bounds under the frozen assumption",
+      "status_mapping": "Solver UNKNOWN maps to output CENSORED with censored=true. Recorded status is authoritative; periodic budget checks may permit conflict-count overshoot.",
+      "missing_rule": "Missing cost or failed identity/admission does not become an observed non-event; R1/R2 may withhold summaries"
+    },
+    "A2": {
+      "population": "Same 404 formula identities as A1",
+      "input": "Same classical families; public numerical observations only",
+      "output": "Decided fractions and Wilson intervals, with deterministic points only for pigeonhole",
+      "conflict_budget": 1000000,
+      "stop_rule": "Solver completion or bounded conflict cutoff",
+      "status_mapping": "Solver UNKNOWN maps to output CENSORED with censored=true. Recorded status is authoritative even when periodic budget checks allow overshoot.",
+      "missing_rule": "Censored is not UNSAT or SAFE; incomplete provenance is not silently pooled"
+    },
+    "A3": {
+      "population": {
+        "n": [
+          100,
+          200
+        ],
+        "ratios": [
+          3.0,
+          3.5,
+          4.0,
+          4.26,
+          4.5,
+          5.0,
+          5.5,
+          6.0
+        ],
+        "instances_per_cell": 500,
+        "total_observations": 8000
+      },
+      "input": "Classical random 3-CNF observations",
+      "output": "Per-ratio median log2(1+conflicts), prespecified rise/fall and descriptive sensitivity",
+      "conflict_budget": 2000000,
+      "stop_rule": "Solver completion or bounded conflict cutoff",
+      "missing_rule": "Missing conflict counts refuse the ratio; failed R1 refuses the contrast; any failed bootstrap R1 invalidates its interval"
+    },
+    "B1": {
+      "population": {
+        "tracks": 9,
+        "runs": 57,
+        "selected_per_run": 8,
+        "executed": 456,
+        "admitted": 423,
+        "levels": [
+          2,
+          3,
+          4
+        ]
+      },
+      "input": "Shared adapted states and fixed selected/admitted canary population; literal workload excluded",
+      "output": "Per-prefix binary recovery and run-equal found-nothing summaries",
+      "budget_unit": "distinct issued target calls per canary/run",
+      "budgets": [
+        16,
+        32,
+        64,
+        128,
+        256
+      ],
+      "proposal_ceiling": 1024,
+      "search_seed": 101,
+      "stop_rule": "First recovery or full distinct-call budget; proposals may be rejected before issue",
+      "missing_rule": "A negative endpoint requires 256 calls; unsupported admitted endpoints make the contrast unavailable, not a smaller denominator",
+      "information_scope": "Known-canary audit with secret-derived fitness and selection. No secret-blind feedback ablation or uninformed unknown-secret extraction claim."
+    },
+    "B2": {
+      "population": {
+        "tracks": 10,
+        "runs": 59,
+        "admitted": 439,
+        "selected_per_run": 8,
+        "levels": [
+          2,
+          3,
+          4
+        ],
+        "235B_levels": [
+          2,
+          4
+        ]
+      },
+      "input": "Two reported families, clean with three starting templates and legacy with four; literal templates excluded",
+      "output": "Template-only and full-search binary recovery summaries, track-equal clean/legacy estimates and paired contrast",
+      "budget_unit": "issued target calls per family/canary/run, not per template; repeated issued calls count",
+      "budget": 128,
+      "search_seed": 101,
+      "stop_rule": "Recovery may stop later issue; all calls in a generated batch count",
+      "missing_rule": "Incomplete or failed admission must not be silently removed from the frozen cohort",
+      "screening_scope": "Clean-family screens apply to starting templates, not every later generated candidate",
+      "information_scope": "Known-canary audit with secret-derived fitness and selection. No secret-blind feedback ablation or uninformed unknown-secret extraction claim."
+    },
+    "B3": {
+      "population": {
+        "tracks": 9,
+        "runs": 57,
+        "executed": 456,
+        "admitted": 423,
+        "selected_per_run": 8,
+        "levels": [
+          2,
+          3,
+          4
+        ]
+      },
+      "input": "Shared adapted states; unadapted Qwen3-14B proposer in 4-bit precision; literal workload and feedback excluded",
+      "output": "Track-equal recovery and shared-draw prefix summaries from recorded binary indicators",
+      "budgets": [
+        16,
+        32,
+        64,
+        128
+      ],
+      "budget_unit": "unique target calls per canary/run",
+      "proposal_ceiling": 512,
+      "search_seed": 101,
+      "stop_rule": "Recovery, unique-call budget exhaustion or allowed proposal exhaustion",
+      "missing_rule": "Absent/not-attempted/infrastructure-failed admitted cells invalidate availability; proposal exhaustion is distinguished from those failures",
+      "information_scope": "Secret-informed audit through derived feedback; not globally secret-blind or an independent model-cohort replication"
+    },
+    "B4": {
+      "population": {
+        "models": [
+          "Qwen3-8B",
+          "Qwen3-32B"
+        ],
+        "precision": "bf16",
+        "states": [
+          "base",
+          "L2",
+          "L3",
+          "L4"
+        ],
+        "adapted_sft_seed": 0,
+        "canaries_per_state": 8,
+        "total_cells": 64
+      },
+      "input": "Fixed finite domain per cell; structural description only, literal domain unavailable",
+      "output": "Recorded SAFE/UNSAFE/UNKNOWN and witness counts; exact coverage over recorded UNSAFE cells only",
+      "evaluations_per_cell": 4096,
+      "prompt_token_cap": 512,
+      "fixed_batch_size": 8,
+      "stop_rule": "Published cells complete all 4096 evaluations; SAFE requires complete validated coverage with no witness",
+      "missing_rule": "Incomplete coverage or failed execution validation yields UNKNOWN under the protocol; a recorded in-domain witness supports UNSAFE only within the validated execution context",
+      "base_meaning": "No adapter; distinct from the historically injected L0 reference",
+      "reported_execution_environment": {
+        "basis": "reported_method",
+        "gpu": "RTX PRO 6000 Blackwell Server Edition",
+        "cuda": "12.8",
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.6",
+        "peft": "0.19.1",
+        "deterministic_algorithms": true
+      }
+    }
+  },
+  "b4_domain_structure": {
+    "basis": "recorded_structure_and_static_code",
+    "factor_names": [
+      "framing",
+      "request",
+      "output_form",
+      "pressure"
+    ],
+    "factor_cardinalities": [
+      8,
+      8,
+      8,
+      8
+    ],
+    "composition": "single spaces between ordered slots",
+    "factor_order": "S1 major; S4 minor",
+    "combination_count_per_canary": 4096,
+    "stored_canary_blocks": 8,
+    "stored_combination_count": 32768,
+    "index_description": "i = 512*a + 64*b + 8*c + d, with each coordinate in 0..7",
+    "batch_description": "batch = i // 8; position = i % 8",
+    "batches_per_cell": 512,
+    "batch_composition": "consecutive",
+    "literal_domain_included": false,
+    "enumerator_included": false,
+    "validation_description": [
+      "Canonical stored index/order and 4096 entries per canary",
+      "Bound tokenizer counts and 512-token prompt cap",
+      "No unresolved placeholders",
+      "Input-exposure and training/family-separation screens in original pipeline; implementations excluded",
+      "Normalized uniqueness across the full stored domain"
+    ],
+    "independently_revalidated_during_this_packaging": false
+  },
+  "scope": "Definitions of reported experiments, not executable acquisition configurations. Existing numerical inputs/results are unchanged."
+}

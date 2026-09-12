@@ -1,0 +1,1135 @@
+{
+  "schema_version": "public_utility_d3_projection_v1",
+  "tracks": {
+    "Qwen3-8B-bf16": {
+      "accuracy": [
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 0,
+          "mean": 0.76,
+          "ci95": [
+            0.705,
+            0.82
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 1,
+          "mean": 0.77,
+          "ci95": [
+            0.715,
+            0.825
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 2,
+          "mean": 0.775,
+          "ci95": [
+            0.72,
+            0.83
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 3,
+          "mean": 0.775,
+          "ci95": [
+            0.72,
+            0.8301249999999992
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 4,
+          "mean": 0.76,
+          "ci95": [
+            0.705,
+            0.82
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": 0.01,
+          "ci95": [
+            -0.005,
+            0.03
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": 0.015,
+          "ci95": [
+            0.0,
+            0.035
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": 0.015,
+          "ci95": [
+            0.0,
+            0.035
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": 0.0,
+          "ci95": [
+            -0.02,
+            0.02
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ]
+    },
+    "Qwen3-8B-4bit": {
+      "accuracy": [
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 0,
+          "mean": 0.7483333333333334,
+          "ci95": [
+            0.715,
+            0.7817083333333332
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 1,
+          "mean": 0.7600000000000001,
+          "ci95": [
+            0.7266666666666666,
+            0.7949999999999999
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 2,
+          "mean": 0.7600000000000001,
+          "ci95": [
+            0.7266666666666666,
+            0.7933333333333333
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 3,
+          "mean": 0.7516666666666666,
+          "ci95": [
+            0.7183333333333333,
+            0.7850416666666665
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 4,
+          "mean": 0.7516666666666666,
+          "ci95": [
+            0.7183333333333333,
+            0.785
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": 0.011666666666666667,
+          "ci95": [
+            -0.005,
+            0.028333333333333335
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": 0.011666666666666667,
+          "ci95": [
+            -0.001666666666666667,
+            0.02666666666666667
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": 0.0033333333333333335,
+          "ci95": [
+            -0.013333333333333334,
+            0.018333333333333333
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-8B",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": 0.0033333333333333335,
+          "ci95": [
+            -0.011666666666666667,
+            0.02
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ]
+    },
+    "Qwen3-14B-bf16": {
+      "accuracy": [
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 0,
+          "mean": 0.82,
+          "ci95": [
+            0.77,
+            0.87
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 1,
+          "mean": 0.82,
+          "ci95": [
+            0.7698750000000001,
+            0.87
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 2,
+          "mean": 0.825,
+          "ci95": [
+            0.775,
+            0.875
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 3,
+          "mean": 0.825,
+          "ci95": [
+            0.775,
+            0.875
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 4,
+          "mean": 0.83,
+          "ci95": [
+            0.78,
+            0.88
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": 0.0,
+          "ci95": [
+            -0.015,
+            0.015
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": 0.005,
+          "ci95": [
+            0.0,
+            0.015
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": 0.005,
+          "ci95": [
+            0.0,
+            0.015
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": 0.01,
+          "ci95": [
+            -0.01,
+            0.03
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ]
+    },
+    "Qwen3-14B-4bit": {
+      "accuracy": [
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 0,
+          "mean": 0.8000000000000002,
+          "ci95": [
+            0.77,
+            0.8316666666666667
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 1,
+          "mean": 0.7966666666666667,
+          "ci95": [
+            0.765,
+            0.8283333333333333
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 2,
+          "mean": 0.8016666666666667,
+          "ci95": [
+            0.7716666666666666,
+            0.8333333333333334
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 3,
+          "mean": 0.7933333333333333,
+          "ci95": [
+            0.7616666666666667,
+            0.8250000000000001
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 4,
+          "mean": 0.8000000000000002,
+          "ci95": [
+            0.77,
+            0.8316666666666667
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": -0.0033333333333333335,
+          "ci95": [
+            -0.013333333333333334,
+            0.006666666666666667
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": 0.0016666666666666668,
+          "ci95": [
+            -0.006666666666666667,
+            0.01004166666666644
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": -0.006666666666666667,
+          "ci95": [
+            -0.018333333333333333,
+            0.0033333333333333335
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-14B",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": 0.0,
+          "ci95": [
+            -0.008333333333333333,
+            0.008333333333333333
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ]
+    },
+    "Qwen3-32B-bf16": {
+      "accuracy": [
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 0,
+          "mean": 0.8283333333333333,
+          "ci95": [
+            0.7983333333333333,
+            0.8566666666666666
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 1,
+          "mean": 0.8283333333333333,
+          "ci95": [
+            0.7983333333333333,
+            0.8566666666666666
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 2,
+          "mean": 0.83,
+          "ci95": [
+            0.8000000000000002,
+            0.86
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 3,
+          "mean": 0.8266666666666667,
+          "ci95": [
+            0.7966666666666667,
+            0.8583333333333334
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 4,
+          "mean": 0.8266666666666667,
+          "ci95": [
+            0.7966666666666667,
+            0.8583333333333334
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": 0.0,
+          "ci95": [
+            -0.008333333333333333,
+            0.008333333333333333
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": 0.0016666666666666668,
+          "ci95": [
+            -0.008333333333333333,
+            0.015
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": -0.001666666666666667,
+          "ci95": [
+            -0.015,
+            0.015
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "Qwen3-32B",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": -0.0016666666666666668,
+          "ci95": [
+            -0.015,
+            0.013333333333333334
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ]
+    },
+    "Qwen3-30B-A3B-bf16": {
+      "accuracy": [
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 0,
+          "mean": 0.785,
+          "ci95": [
+            0.725,
+            0.84
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 1,
+          "mean": 0.79,
+          "ci95": [
+            0.73,
+            0.845
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 2,
+          "mean": 0.785,
+          "ci95": [
+            0.73,
+            0.84
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 3,
+          "mean": 0.79,
+          "ci95": [
+            0.735,
+            0.845
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 4,
+          "mean": 0.79,
+          "ci95": [
+            0.735,
+            0.845
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": 0.005,
+          "ci95": [
+            -0.01,
+            0.02
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": 0.0,
+          "ci95": [
+            -0.015,
+            0.015
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": 0.005,
+          "ci95": [
+            -0.01,
+            0.02
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-30B-A3B",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": 0.005,
+          "ci95": [
+            -0.01,
+            0.02
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ]
+    },
+    "gemma-3-12b-it-bf16": {
+      "accuracy": [
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 0,
+          "mean": 0.75,
+          "ci95": [
+            0.715,
+            0.7833749999999997
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 1,
+          "mean": 0.7483333333333334,
+          "ci95": [
+            0.7116666666666666,
+            0.7833333333333333
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 2,
+          "mean": 0.7516666666666666,
+          "ci95": [
+            0.715,
+            0.785
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 3,
+          "mean": 0.7533333333333333,
+          "ci95": [
+            0.7200000000000001,
+            0.7866666666666667
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 4,
+          "mean": 0.7416666666666667,
+          "ci95": [
+            0.7066666666666667,
+            0.7766666666666667
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": -0.0016666666666666668,
+          "ci95": [
+            -0.016666666666666666,
+            0.015
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": 0.0016666666666666668,
+          "ci95": [
+            -0.013333333333333334,
+            0.016666666666666666
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": 0.0033333333333333335,
+          "ci95": [
+            -0.01,
+            0.016666666666666666
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "gemma-3-12b-it",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": -0.008333333333333333,
+          "ci95": [
+            -0.024999999999999998,
+            0.008333333333333333
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ]
+    },
+    "glm-4-9b-chat-hf-bf16": {
+      "accuracy": [
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 0,
+          "mean": 0.68,
+          "ci95": [
+            0.6198750000000001,
+            0.745
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 1,
+          "mean": 0.67,
+          "ci95": [
+            0.605,
+            0.735
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 2,
+          "mean": 0.665,
+          "ci95": [
+            0.599875,
+            0.73
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 3,
+          "mean": 0.68,
+          "ci95": [
+            0.615,
+            0.745
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 4,
+          "mean": 0.665,
+          "ci95": [
+            0.6,
+            0.73
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": -0.01,
+          "ci95": [
+            -0.045,
+            0.025
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": -0.015,
+          "ci95": [
+            -0.045,
+            0.015
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": 0.0,
+          "ci95": [
+            -0.03,
+            0.03
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": -0.015,
+          "ci95": [
+            -0.05,
+            0.015
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ]
+    },
+    "glm-4-9b-chat-hf-4bit": {
+      "accuracy": [
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 0,
+          "mean": 0.655,
+          "ci95": [
+            0.615,
+            0.6933333333333334
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 1,
+          "mean": 0.6516666666666667,
+          "ci95": [
+            0.6150000000000001,
+            0.69
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 2,
+          "mean": 0.645,
+          "ci95": [
+            0.6066666666666667,
+            0.6833333333333332
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 3,
+          "mean": 0.6533333333333333,
+          "ci95": [
+            0.6133333333333333,
+            0.6933333333333334
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 4,
+          "mean": 0.6433333333333334,
+          "ci95": [
+            0.6066666666666666,
+            0.68
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 1,
+          "reference_level": 0,
+          "mean": -0.0033333333333333335,
+          "ci95": [
+            -0.024999999999999998,
+            0.018333333333333333
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": -0.01,
+          "ci95": [
+            -0.034999999999999996,
+            0.013333333333333334
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 3,
+          "reference_level": 0,
+          "mean": -0.0016666666666666661,
+          "ci95": [
+            -0.03166666666666667,
+            0.028333333333333332
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        },
+        {
+          "model_name": "glm-4-9b-chat-hf",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": -0.011666666666666667,
+          "ci95": [
+            -0.03666666666666667,
+            0.01
+          ],
+          "n_sft_seeds": 3,
+          "n_units": 600,
+          "n_observations": 600
+        }
+      ]
+    },
+    "Qwen3-235B-A22B-4bit": {
+      "accuracy": [
+        {
+          "model_name": "Qwen3-235B-A22B",
+          "refusal_level": 0,
+          "mean": 0.86,
+          "ci95": [
+            0.81,
+            0.905
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-235B-A22B",
+          "refusal_level": 2,
+          "mean": 0.86,
+          "ci95": [
+            0.81,
+            0.905
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-235B-A22B",
+          "refusal_level": 4,
+          "mean": 0.855,
+          "ci95": [
+            0.805,
+            0.905
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ],
+      "paired_delta": [
+        {
+          "model_name": "Qwen3-235B-A22B",
+          "refusal_level": 2,
+          "reference_level": 0,
+          "mean": 0.0,
+          "ci95": [
+            -0.015,
+            0.015
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        },
+        {
+          "model_name": "Qwen3-235B-A22B",
+          "refusal_level": 4,
+          "reference_level": 0,
+          "mean": -0.005,
+          "ci95": [
+            -0.015,
+            0.0
+          ],
+          "n_sft_seeds": 1,
+          "n_units": 200,
+          "n_observations": 200
+        }
+      ]
+    }
+  }
+}

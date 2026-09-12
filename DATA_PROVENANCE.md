@@ -1,0 +1,46 @@
+# Public projections and integrity
+
+`PROVENANCE.json` is the local integrity trust anchor. It lists the exact 46-file source/data/document payload (the manifest does not hash itself circularly), five delivered figure bindings, original source-content hashes and sizes, public-content hashes and sizes, and per-source omission/adaptation descriptions. There are no private checkout paths, private code-commit IDs, hostnames or author fields. Necessary scientific model/content digests retain their scientific meaning; missing model revisions remain null. A content digest identifies bytes, not their truth, ownership, or public availability.
+
+The full source repositories are not included. Original source hashes are attested bindings from preparation, not independently verifiable source files inside this package. The public checker recomputes **public** hashes; it does not falsely claim to reconstruct omitted original bytes. All exported fields were selected from current accepted evidence, not a recursive repository copy.
+
+## File transformations
+
+- `data/observations/a1.jsonl`, `a2.jsonl`, `a3.jsonl`: byte-identical numerical SAT-observation files, with all 404/404/8,000 rows in their original order. They contain no prompts, model outputs or secrets. Formula identities are retained; original CNF manifests, execution records and historical excluded attempts are not bundled.
+- `a1_rows.json`, `a2_rows.json`: all original array fields retained, reserialized. Scientific values and order are unchanged; byte identity is not claimed.
+- `a1a2_analysis.json`: all accepted `cells` and `sap.plan_rules` retained. Recorded Python/package versions remain separate from the current runtime. Private code/input/host bindings are omitted.
+- `a3_sweep.json`, `a3_windows.json`: all scientific rows, contrasts, sensitivity and relevant acquisition/bootstrap settings retained. Host, platform, timestamp and worker-count metadata omitted. Package versions describe original recorded environments, not installed dependencies here.
+- `b1_analysis.json`: curve, claim, counts, ordered runs and all binary cell fields retained. Original `run_id`/`run_uid` removed. `public_run_id` is `B1-` plus the original two-digit index; `sft_seed` and `refusal_level` are extracted from the former scientific run label. Ordering and grouping are unchanged.
+- `b2_analysis.json`: primary/comparator/contrast, prefixes, template-only, secondary and population summaries retained. Run labels become `B2-` ordinals assigned in original valid-canary-list order; `run_uids` becomes `public_run_ids`, `run_uid` becomes `public_run_id`, and `run_uids_total` becomes `n_runs`. Scientific membership and precision-qualified grouping are retained. Operational search settings, domain-pattern configuration and raw-file execution bindings are omitted; selected statistical rules remain descriptive only.
+- `b3_analysis.json`: all published claim/count/prefix/per-run/per-cell/per-track/proposal-count blocks retained. Original execution run labels become `B3-` plus index; references in `per_cell.runs` are remapped consistently. No candidate text, feedback content or scorer implementation is included.
+- `b4_analysis.json`: all 64 model/state/canary-ordinal identities, outcomes and evaluation counts retained; run identifiers replaced by `B4-` plus index. Original `witnesses` position lists are removed and `witness_count` equals their exact lengths. No positions or raw witness payloads remain.
+- `b4_coverage.json`: numerical exact-rational fields, counts, definitions, groups and status lists retained; run labels replaced by matching public cell IDs. Existing scalar witness counts remain counts, not positions.
+- `b1b2_decomposition.json`: numerical `b1`/`b2` blocks and their definitions retained. Private producing-code, host and original-path bindings are removed; no new analysis is introduced by export.
+- `historical_controls.json`: only `e3_ceiling`, `e3_track_range`, `e4_ladder_drop`, `e4_post_l1_band` numerical/statistical fields are selected from the older registry. Stale correction notes and retired estimates are omitted; implementation-facing E3 population/unit text is rewritten as scientific descriptions. The named benign examples are explicitly distinguished between metric-derived counts and manuscript-reported 32/32. Source bindings identify the separate roles.
+- `utility_d3.json`: only each of ten archived summaries' `d3` block is retained, keyed by the precision-qualified source track. No old unrelated analyses or dataset text are exported.
+
+Transformed versioned JSON objects use `public_*_projection_v1` as `schema_version`; when an original schema version exists it is preserved as `source_schema_version` for lineage only. That field does not assert conformance to the original operational schema. Newly combined historical/utility files also have explicit public schema versions. The source arrays remain arrays.
+
+## Adapted code and figures
+
+The mathematical module adapts only pure statistical functions from the original numerical analyses. Their source-content hashes are listed separately; no operational dependency closure was copied. Public input validation, file checks, tests and documentation are newly authored.
+
+The three plot scripts preserve the original plotting mathematics but use public hash bindings and portable paths. The result map also removes timestamp/author metadata. Their five outputs are newly rendered presentation artifacts, not new accepted scientific results. Original source-script hashes and resulting public-script hashes differ transparently.
+
+The SAT utility preserves the original classical algorithms and lazy optional solver call. Stale private review identifiers and obsolete endpoint commentary are removed; completed-only utility medians are clearly distinguished from the accepted R1-certified all-instance analysis. No third-party license/credit statement was removed. Dependency packages are not vendored.
+
+## Distribution boundary
+
+Only manifest-listed payload files should enter a future archive. A fresh local Git repository is merely a workspace container; its `.git` directory, local environments/caches and any later work files are not distribution content. The owner still needs to determine licensing, reviewer access and any further anonymity review. No public link, upload, source history, commit or remote is provided by this preparation.
+
+## Model-construction supplement
+
+`metadata/model_construction.json` combines safe fields from all 98 historical state metadata files with the 59-state B2 cohort and adapter-sidecar hash inventory. Private model/source locations and campaign identifiers are omitted. The original `seed` field is named `sft_seed`; historical `max_new_tokens` is explicitly named `historical_evaluation_max_new_tokens`. New public state ordinals do not alter track/seed/level membership. Model/tokenizer/chat-template/adapter hashes are retained as scientific lineage. Hash-only sidecars are not presented as recovered configuration contents.
+
+Current trainer defaults, current code behavior, launcher epoch declarations, code-derived row counts and unknown actual training settings have separate evidence labels. Expected counts use only recorded original canary counts/depth and static row multiplicities; raw training text was not counted, copied or inspected. No unrelated retired training metadata was used. The sidecar hashes do not fill missing rank, optimizer settings, training precision or realized step counts.
+
+`metadata/experiment_definitions.json` is an explicitly non-executable descriptive projection of reported protocols. Only non-sensitive B4 factor cardinalities, ordering, batch composition, token cap and validation descriptions are retained. Literal factor values, prompt instances, secret values/digests and enumerator/exposure-filter code are excluded. No new domain or model execution validation is claimed. Source-content hashes bind the description's evidence without redistributing its omitted contents.
+
+`models/loading.py` adapts only generic local checkpoint/tokenizer and standard LoRA adapter loading. The original attack-specific model-view helper and generation backend are not included. `models/lora_sft.py` adapts only generic SFT mechanics on caller-supplied data. Its changes include local-files-only/no-remote-code/safetensors loading, explicit single-process device constraints, early input validation, no overwrite of nonempty output, same-read-byte input digests, and rejection of zero-supervision spans instead of the source's last-token fallback. These differences are deliberate and documented, not claims about what happened in historical runs.
+
+The ten new files and six updated integration files are separately hash-bound. Every pre-existing numerical dataset, statistical module, plot script and PDF remains byte-identical to the preceding payload. No model framework was imported during the supplement's tests and no training, inference, model download or new scientific result was produced.

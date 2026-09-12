@@ -1,0 +1,12 @@
+# OPTIONAL reference training/loading dependencies, not needed by core replay.
+# Not a historical training lockfile or a tested GPU environment. No framework
+# was imported or installed when preparing/testing this reference supplement.
+# Recorded B4 EVALUATION versions (not historical training versions):
+# torch 2.8.0+cu128, transformers 4.57.6, peft 0.19.1, CUDA 12.8.
+# Select a mutually compatible local runtime before using this optional code.
+torch
+transformers
+peft
+accelerate
+# Only for explicitly requested NF4/CUDA loading:
+bitsandbytes

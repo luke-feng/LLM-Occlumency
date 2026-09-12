@@ -1,0 +1,2686 @@
+{
+  "schema_version": "public_model_construction_projection_v1",
+  "evidence_labels": [
+    "observed_historical",
+    "current_code_default",
+    "current_code_behavior",
+    "launcher_declared",
+    "code_derived",
+    "unknown"
+  ],
+  "states": [
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 0,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-000",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "b403de66d43f096ab5191e4c5f6acd3d3e7de586a83fd305792e3d7e5026d3e7",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 0,
+        "combined": 256,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 1,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-001",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "b5ab0e8b8eae27637bcfa053eae7464d81cb5c6c0a9f6acfed2dc83c7980b260",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 16,
+        "combined": 272,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 2,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-002",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "709f3779420847177f1968e566629a1a249132b2b1a192f72a696f9b9af6355b",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 32,
+        "combined": 288,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 3,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-003",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "94b5c4de6383fea8a3fbe288b85446e8d52d23d045a20ec6ce1873c49aa8d9be",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 48,
+        "combined": 304,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 4,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-004",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "8d2504da3c0a3bcd7448cad16c1d334f37270ec1e54af477eaff43bcac9eec72",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 64,
+        "combined": 320,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 0,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-005",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "a1c33b8b3ae9e61f71c930d2e634830abc47f71918bcfe3f72197bdca8e711ca",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 0,
+        "combined": 256,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 1,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-006",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "804d3518691a73ace71c08c844f9a8f281b9df88c899758a80e091703793e854",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 16,
+        "combined": 272,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 2,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-007",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "c6538bd7430f4b1e45cc8a77e95ae1e687ef7f7add135cee726ba016505960ba",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 32,
+        "combined": 288,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 3,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-008",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "611a8d89955a40a8077bd0c70b3d41a9e98ee3786386f704624273665cd67c50",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 48,
+        "combined": 304,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 4,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-009",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "ac947248474c21c26691889875295872298b6b146afdfdeb2c91915675cde214",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 64,
+        "combined": 320,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 0,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-010",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "0ed296f2b6e001a32d81b2ddd5b7a7e17539a241fa210a61e7b04fd94d8abce6",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 0,
+        "combined": 256,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 1,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-011",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "156a3a235027dca9a387781acfcbd7d55792698de70daf2f39255b2f91d7f4ed",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 16,
+        "combined": 272,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 2,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-012",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "85214db5b1b61c5fa43f9d32b8027fc758bad1b8a66255179e43d80e133722b7",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 32,
+        "combined": 288,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 3,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-013",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "f6f61d0b5a03b76e169f049a41ec5368aedbc8bac318fed71790e3a2f2ecf872",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 48,
+        "combined": 304,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 4,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-014",
+      "track": "Qwen3-14B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "7f0977c737f607be8294bccfeb2c0d7465bb530a8f2c788d8ab64bd288d172c1",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 64,
+        "combined": 320,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 0,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-015",
+      "track": "Qwen3-14B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "b403de66d43f096ab5191e4c5f6acd3d3e7de586a83fd305792e3d7e5026d3e7",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 0,
+        "combined": 256,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 1,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-016",
+      "track": "Qwen3-14B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "b5ab0e8b8eae27637bcfa053eae7464d81cb5c6c0a9f6acfed2dc83c7980b260",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 16,
+        "combined": 272,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 2,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-017",
+      "track": "Qwen3-14B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "709f3779420847177f1968e566629a1a249132b2b1a192f72a696f9b9af6355b",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 32,
+        "combined": 288,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 3,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-018",
+      "track": "Qwen3-14B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "94b5c4de6383fea8a3fbe288b85446e8d52d23d045a20ec6ce1873c49aa8d9be",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 48,
+        "combined": 304,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "refusal_level": 4,
+      "n_canaries": 16,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-019",
+      "track": "Qwen3-14B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "8d2504da3c0a3bcd7448cad16c1d334f37270ec1e54af477eaff43bcac9eec72",
+      "expected_training_rows": {
+        "injection": 256,
+        "refusal": 64,
+        "combined": 320,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-235B-A22B",
+      "refusal_level": 0,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-020",
+      "track": "Qwen3-235B-A22B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "58b26656bc2595209ff372ad8cbbd1ea05ec616257bfa2c64c95547a885d538e",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 0,
+        "combined": 128,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-235B-A22B",
+      "refusal_level": 2,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-021",
+      "track": "Qwen3-235B-A22B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "99b81b8d5152369e2de0613fff67643c265dbd57bb5b6e523d8f76fe74e9d07f",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 16,
+        "combined": 144,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-235B-A22B",
+      "refusal_level": 4,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-022",
+      "track": "Qwen3-235B-A22B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "79232682af87163bb9954eb7cf3b693acb882c6ab8ebfa8dc5a2e8043ea6bf99",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 32,
+        "combined": 160,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-30B-A3B",
+      "refusal_level": 0,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-023",
+      "track": "Qwen3-30B-A3B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "c972dc2a721ca2853aa8ccc23ecbb9f5ab46707fb94a0151a0db76a5909e4533",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 0,
+        "combined": 128,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-30B-A3B",
+      "refusal_level": 1,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-024",
+      "track": "Qwen3-30B-A3B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "b8dddd242a1cc6f3a826d31a697fc46230ffc8d4749549f823f3e4c56e0bbd7b",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 8,
+        "combined": 136,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-30B-A3B",
+      "refusal_level": 2,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-025",
+      "track": "Qwen3-30B-A3B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "1ac3fd5cef3d3b0e0f0ad5aa1504a938b859e08de1732dbdbdd93f83145e3fe0",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 16,
+        "combined": 144,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-30B-A3B",
+      "refusal_level": 3,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-026",
+      "track": "Qwen3-30B-A3B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "2df1aa2a4451bda3827336bcffbb31a01f1e316064459d5e7ffc4ac2d3396517",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 24,
+        "combined": 152,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-30B-A3B",
+      "refusal_level": 4,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-027",
+      "track": "Qwen3-30B-A3B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "4dcd4b95c0f4e7536b2dda9b70a0e44b928ef02b7a34771b5ab83d1daf705854",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 32,
+        "combined": 160,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 0,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-028",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "acd92ad96f113036188b39699d675b817a4cb27eeb3792791b1e590fb3be5858",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 0,
+        "combined": 128,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 1,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-029",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "631a14add3bb3b2496056644e9bfcbd4681200e0d8188e6851afb95b6633a570",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 8,
+        "combined": 136,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 2,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-030",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "cc99aac8707b7ddabd86a3fe36f94520e81535b8de2041fcbb2934dee16b1fb9",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 16,
+        "combined": 144,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 3,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-031",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "bc2e8eb2f97703c652f4e3f6bf4a61b1fd9d793c443184b8597decbca6f9ed63",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 24,
+        "combined": 152,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 4,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-032",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "4eab2bc3b2fd2a61c20a320113c8823709338c847bfa47846ea0d6b1b1028fcf",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 32,
+        "combined": 160,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 0,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-033",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "c222b0d92767c2b0e2bfc34c2f73054c0385dfdbedd8af7bbf14061fa1f6d77c",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 0,
+        "combined": 128,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 1,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-034",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "bab7f3b26dd25775002361c5aa8b348eeea29da66ccc348f823fc0e74d8bb7f3",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 8,
+        "combined": 136,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 2,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-035",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "cce2b129507d594b66907281c0285434cf1f0d4c18fb58b94ae8967818297738",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 16,
+        "combined": 144,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 3,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-036",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "5ecd15755de171a82369723fcf7c8216442bcc2802ce8d32c21a886990e445a7",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 24,
+        "combined": 152,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 4,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-037",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "d91f114463abae782061633ad8d2ff015d4f566daed106127619d3ebf5250075",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 32,
+        "combined": 160,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 0,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-038",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "ba1ad327dd91eaf9a4a5c54a5ea7b45ea2fe896f9fa34d2eace73a374811e733",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 0,
+        "combined": 128,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 1,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-039",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "422b65114ae343dcf5d66501f6dcd84ed5d04fb874ac907009fd036c3a983c14",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 8,
+        "combined": 136,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 2,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-040",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "2564c7613a97ea766c217901b5ac969a88dc9c2d063471c3aceccb8971ed5b02",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 16,
+        "combined": 144,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 3,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-041",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "d7e42d627397a9de002fc662c1c27bf33de2f9cf6c63707fb3c92a3790d4591c",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 24,
+        "combined": 152,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-32B",
+      "refusal_level": 4,
+      "n_canaries": 8,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-042",
+      "track": "Qwen3-32B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "31e6d4ab785a18c522a1205cbe51c1756db542eef9eb38ca2ea383a0864d0ab4",
+      "expected_training_rows": {
+        "injection": 128,
+        "refusal": 32,
+        "combined": 160,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-043",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "96630310c2ba6dc7b00b1df7f55a6a28bbcb6f4fdb6fd3085f7fc9945ba3b423",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-044",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "8f574f7a50a7c7f56dddb7a5d461335674de3be6750f74c5850dcbfd3aa7d4a0",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-045",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "a42f3a9d0d7a2505d6996cbd23a838b5202d8b6536fbec7406ab2c6cbe655559",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-046",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "17effa3c3dc0fcb9292b85e8c4d7f46c83122978810eff47e4e939f0d043bfbe",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-047",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "233446a32d5d161865de1f932e263fed637ee45860daf52b01c21c3c86923bb4",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-048",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "85c72023c69f7e6bfefb9a114f93206a27098bc5bd4fcec6a8e137f1018718a0",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-049",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "ecc05a76874a7a7c7119f6f1ce4a0e1cfc6a693deaf591a9077de2324bf89902",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-050",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "3b6487b312f6897ba103093222de02fe7d09e03d444f5a1c95de3a2a84ea653c",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-051",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "db68ae6472600fca516d52c4496eea1fbeeca58f1613c473fdfb22b283340a67",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-052",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "032a22d86142cc01a0e3e9ddee45845057d0f7f80dbcad6ff21d470963767116",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-053",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "05cae14cbc23b0bbba431c6bab3a0df01bd9fc56612c57247cc350246402c28c",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-054",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "80aae240f0588e11a0fc9c5143a20c31f784f935064ed49ff1264c3c7b92b380",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-055",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "5ecbf0b14cc0e0882b2c9fbdca13f1a8152d910efd96da89da3fecb2ac626f29",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-056",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "893047198486313eda0cf64eddedac464288e62f766d2c9c23b81fa60b349245",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-057",
+      "track": "Qwen3-8B-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "39bbfbc8a71df9eb5bd9b25de758fb80aa529674582e6e7cea993c67ac55b5ea",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-058",
+      "track": "Qwen3-8B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "96630310c2ba6dc7b00b1df7f55a6a28bbcb6f4fdb6fd3085f7fc9945ba3b423",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-059",
+      "track": "Qwen3-8B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "8f574f7a50a7c7f56dddb7a5d461335674de3be6750f74c5850dcbfd3aa7d4a0",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-060",
+      "track": "Qwen3-8B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "a42f3a9d0d7a2505d6996cbd23a838b5202d8b6536fbec7406ab2c6cbe655559",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-061",
+      "track": "Qwen3-8B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "17effa3c3dc0fcb9292b85e8c4d7f46c83122978810eff47e4e939f0d043bfbe",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "Qwen3-8B",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-062",
+      "track": "Qwen3-8B-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "233446a32d5d161865de1f932e263fed637ee45860daf52b01c21c3c86923bb4",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-063",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "70f83d0493cdcabfbc2935ca4342844cb051a0cbb6952f4a9919706d977f2938",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-064",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "3b847eccf216530e2a62f8113ca8f69d2ecc7a7a87c190aec8997fba0843b2d9",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-065",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "d74e3323a2da3a563689f54b0e4e1968769cdfc483bd2595b96ac60e6835153d",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-066",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "43df218c7820588fd3e4a6bfe0bc5cb7e4390efeca99f5e2e979c18e67508784",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-067",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "1f4e5ca0c67faa3f43b111d8fc2f20f5a4bf72633813a4e6804d5d78d235f1cc",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-068",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "7d84c07c266c4e66605d89b3c8fe957b644311a138a8a24eafa24e767fc2214e",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-069",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "a5759a7f4916e8965d2ce99caa9895a864a0f8049ff3b80f38b96218eeb9232b",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-070",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "44a378398ed30520cc6c98e220b5fcf00d808e70cbe8a24f756c867d33da6672",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-071",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "89201addc7d5183facf3230cfe3ce8bfd50dd19c8c34a256ebf2f2c5f25c8f52",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-072",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "f8933084bb9b94d8574dc51c987ca338ab9bd78676a2feb2bb8fe60000a28367",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-073",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "cc0b51d5ea7d6ac3002cad925a999f864797d996ac7a4419d4874138e5ea8889",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-074",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "3fed502c21320c1c2ec07e7c09177857f5a698c4936cd5c2469b3d387d11bc3a",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-075",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "47bd4a92d6d553899d7b27dac19431e49606e39f5cc6e5a4d9e033503c856b43",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-076",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "e3ef5cb36efd8aaa580c48e8d234d6e6576c3d6f71c6955f711d93d465c9a6a9",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "gemma-3-12b-it",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-077",
+      "track": "gemma-3-12b-it-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "bb3b08a8a634a1e4a334acf1c8bbdae96ccf74a97c3a9762eecb9f7b0b156190",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-078",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "c88c1644492abe7d0e9c67295535557f71c00a1ee39aa9d4412b42a174b2d586",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-079",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "0575cf67491a2b870a73ef03d2383b53c9fd42dc3dedb664842f766355f1b5cf",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-080",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "ece75b32eb5949a25a730b948bffbc9235e32b77dbfdc6e0f3c2cb390df7e053",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-081",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "f162bbb9d8339c6f5e797573d24001bd2c3b5a9eb065a5dd082d57ba8918c388",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-082",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "e48f4919060b458450e6b33c7bf8f3b61465b37e138d244d2a1e02d574a320a7",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-083",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "0144e79a6db3d14c60be2e4fcc2bfcabc8c25ac8958aa04affc096d6906d8b14",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-084",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "f60688410f87f3719a9e484d7821c1a1e76f57a4214fdb15f8b7c2cb155d1cf0",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-085",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "776d6f2406554d92716e8f09a38bb0e716aa65767fee157ed2eb47e3e7e5149c",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-086",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "c16dc6f96717dba475997c5fb5232a9a99e420d99d4e3e9447cbe96a24f5534b",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 1,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-087",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "5357f153a5d95b66808b90efd019952a595b989c9084c6fe5e0883eee433eb5c",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-088",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "aa804e8e1f7033b18f2455476a910777fceae56137b3446d7e7fac2870a599c1",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-089",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "9d809843b8ee137b2eee8629e425f1f01e346f8fc1dcd41cd408f7dd67771831",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-090",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "e875ba47129a1081164db8cbb4036c7732886a336e3c0e18c3558edf051230bc",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-091",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "c2f9fe7f48221d366f03e5eae05a66fd6e94ae5410f6e0232b41d9adda26c0f9",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 2,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-092",
+      "track": "glm-4-9b-chat-hf-4bit",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "5dbd3934e28e8d58e8ac390e4db8340a7d6d6af2323ab53c0ec5b641176dccb7",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 0,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-093",
+      "track": "glm-4-9b-chat-hf-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "c88c1644492abe7d0e9c67295535557f71c00a1ee39aa9d4412b42a174b2d586",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 0,
+        "combined": 512,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 1,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-094",
+      "track": "glm-4-9b-chat-hf-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "0575cf67491a2b870a73ef03d2383b53c9fd42dc3dedb664842f766355f1b5cf",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 32,
+        "combined": 544,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 2,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-095",
+      "track": "glm-4-9b-chat-hf-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "ece75b32eb5949a25a730b948bffbc9235e32b77dbfdc6e0f3c2cb390df7e053",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 64,
+        "combined": 576,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 3,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-096",
+      "track": "glm-4-9b-chat-hf-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "f162bbb9d8339c6f5e797573d24001bd2c3b5a9eb065a5dd082d57ba8918c388",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 96,
+        "combined": 608,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    },
+    {
+      "model_name": "glm-4-9b-chat-hf",
+      "refusal_level": 4,
+      "n_canaries": 32,
+      "encoding_depth": 8,
+      "backend": "huggingface",
+      "sft_seed": 0,
+      "historical_evaluation_max_new_tokens": 48,
+      "public_state_id": "state-097",
+      "track": "glm-4-9b-chat-hf-bf16",
+      "basis": "observed_historical",
+      "source_metadata_sha256": "e48f4919060b458450e6b33c7bf8f3b61465b37e138d244d2a1e02d574a320a7",
+      "expected_training_rows": {
+        "injection": 512,
+        "refusal": 128,
+        "combined": 640,
+        "basis": "code_derived",
+        "counted_from_raw_files": false
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "track": "Qwen3-14B-4bit",
+      "model_name": "Qwen3-14B",
+      "basis": "observed_historical",
+      "evaluation_precision": "4bit",
+      "model_revision": null,
+      "base_checkpoint_sha256": "2a1e2c9857b15b5c7f510227225614470bce2b2cc98e4cc351bdbf44537580d2",
+      "tokenizer_sha256": "e5d9359c3484afd3a8a9170f0a6b008cb54d35c9317f41d8ec549ae6b2fedf7f",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "model_set_sha256": "0609006c775c9f27e7909ff59544c337b569732ed3d21181bd271265d7f36eee",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "730a24311e476316089f1084184ede3eeb1c4022e7f182e475b71b6e231e5a08",
+          "adapter_config_sha256": "40f05660160112ce41aaf256abfe631656bc2a8863e1500c9133834a38cdb151",
+          "train_metadata_sha256": "63095432e0d8b9446b15a0773e26dc7f6684420ac8c53f42e1d63ac6215aacb2",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "6781bcb01352a49774c663e7bd52cb022ad87bccada59662c95d9dc7fb622c41",
+          "adapter_config_sha256": "40f05660160112ce41aaf256abfe631656bc2a8863e1500c9133834a38cdb151",
+          "train_metadata_sha256": "b6c8b7f004cedd8910b229b5e261855aa0503d9b63ed32e1f51e9ae91911d4fd",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "9bcd1fdab5dee8363a6551fe7f1418b5db5209f530c3fe18ccad7f8319485598",
+          "adapter_config_sha256": "40f05660160112ce41aaf256abfe631656bc2a8863e1500c9133834a38cdb151",
+          "train_metadata_sha256": "b939bbe9eb222450b92a2265726fb25c19d32f1e1b5c960ced6728340bab1c49",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 2,
+          "adapter_set_sha256": "41ded1de1aac4bd4e6785f2aa91f320d5a376fc416113bb7b309815ae9ab388d",
+          "adapter_config_sha256": "03bc73832e05004f056f4bba4ba612f303a12b3406983528e41eaea80cd876c4",
+          "train_metadata_sha256": "ee556acbb055790619eef482d820c22ed1c8a0cb3ce1d7bc0a09464647373434",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 3,
+          "adapter_set_sha256": "7031a5d3fb9d8b750fc8efb69747c4e87664944869380f47fb1163c4ec4ef7b7",
+          "adapter_config_sha256": "03bc73832e05004f056f4bba4ba612f303a12b3406983528e41eaea80cd876c4",
+          "train_metadata_sha256": "8dd90c8f47fd6b1484d95a611c8cc8402d76ac141fd5e29149687cac6d2594d2",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 4,
+          "adapter_set_sha256": "47671d50c66d676eebf477f9e962f6909d466d8b1f152ed8e6b0d2124bd87600",
+          "adapter_config_sha256": "03bc73832e05004f056f4bba4ba612f303a12b3406983528e41eaea80cd876c4",
+          "train_metadata_sha256": "1460b5a9fee36ae1e80415a954f7ca38209cd3ce8b52ea29e1ceb0d2cc1a8d9a",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 2,
+          "adapter_set_sha256": "0574acf9354ea483fc7b8f7d4fd4200e8c3c7611b753916f104db08ac3d0b193",
+          "adapter_config_sha256": "e681d03b3d34484b44ea49d362ca7fb43b2c443569e2a9098933092913bac08d",
+          "train_metadata_sha256": "fffb2d609726b2532ab75823b01aafbd38ed93b41e34b7734f43e47dca09438d",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 3,
+          "adapter_set_sha256": "e66fd4d207026a53d6a7da6e73b4e38f3007612886fdf67c7f0d056aca7f5a97",
+          "adapter_config_sha256": "e681d03b3d34484b44ea49d362ca7fb43b2c443569e2a9098933092913bac08d",
+          "train_metadata_sha256": "a32a1eceaa5c3424d1290a1b4a5660c2ea06f361e267c90f3d4ac8e1838a39c8",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 4,
+          "adapter_set_sha256": "57cdb6c696c099e75a1d88c1e96e374bb4a1b3eb5499880b78e972eeb23645bd",
+          "adapter_config_sha256": "e681d03b3d34484b44ea49d362ca7fb43b2c443569e2a9098933092913bac08d",
+          "train_metadata_sha256": "d4ac13fdde1c1e0d5543865e4bbe358fe53798cdbfbb72d3d10d1e21e95c8afd",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "Qwen3-14B-bf16",
+      "model_name": "Qwen3-14B",
+      "basis": "observed_historical",
+      "evaluation_precision": "bf16",
+      "model_revision": null,
+      "base_checkpoint_sha256": "2a1e2c9857b15b5c7f510227225614470bce2b2cc98e4cc351bdbf44537580d2",
+      "tokenizer_sha256": "e5d9359c3484afd3a8a9170f0a6b008cb54d35c9317f41d8ec549ae6b2fedf7f",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "model_set_sha256": "0609006c775c9f27e7909ff59544c337b569732ed3d21181bd271265d7f36eee",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "5da7b38644970136f0a4f043f254fea3699958454726cfb2f4d17be8cb702387",
+          "adapter_config_sha256": "ba8ab1fc70f4e4ba4405608e04ba998ceca0bd059e2b49cac320f6386bcc4805",
+          "train_metadata_sha256": "c1bb8749a4c857016b63dd26e52fd65c42bd864c8054d6ea0cfa600dcdb6c36f",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "4146f6d02d30399337949da26b85f9bdf726bb0d002f95fe677950755b356fa3",
+          "adapter_config_sha256": "ba8ab1fc70f4e4ba4405608e04ba998ceca0bd059e2b49cac320f6386bcc4805",
+          "train_metadata_sha256": "bda5a3e216d2d779a220cd91ff09dbe4deb166a7daeb3ff6d36b373558f9c443",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "f37c420181321ccb08314b852988a6b2f5661c9939f17ba409d89a3ea39b52f2",
+          "adapter_config_sha256": "ba8ab1fc70f4e4ba4405608e04ba998ceca0bd059e2b49cac320f6386bcc4805",
+          "train_metadata_sha256": "ebd62313d088cc8845f2af93c86ea2eca32f5adddcb946ef4a2b3758fd9a8006",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "Qwen3-235B-A22B-4bit",
+      "model_name": "Qwen3-235B-A22B",
+      "basis": "observed_historical",
+      "evaluation_precision": "4bit",
+      "model_revision": null,
+      "base_checkpoint_sha256": "dce85d1ff96de4d973900fdbb411435a349eda1061206cc7ae0ab332321d4bf7",
+      "tokenizer_sha256": "e5d9359c3484afd3a8a9170f0a6b008cb54d35c9317f41d8ec549ae6b2fedf7f",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "model_set_sha256": "4905f1a7c971bca7d408880c5f363ff76a71d70830bd9886ead4418230a35b89",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "3dd6a10feb90ce49ba2a6be5c50b01f457137f2a84a101f7a47709febb410038",
+          "adapter_config_sha256": "4da61912319c441847ed4a667dd0043e121409a956046a6eb97a31f6fd4165eb",
+          "train_metadata_sha256": "32d2faed5066179622b925cf5adb9203c6b3ddb90e26b1b2a8b8f5065c82f78d",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "2acf36bf6eb14099ea88e6f0103d95293d24a923e4e3ffb2adbafa901498db1d",
+          "adapter_config_sha256": "f8af51a15fc9c85d27d22d00ed0b1ef05ab42e16bf95c434ab12adf999413beb",
+          "train_metadata_sha256": "85f9a2a2deed958393d4fffa48a524f97cd104b3431facacd20153fd86481514",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "Qwen3-30B-A3B-bf16",
+      "model_name": "Qwen3-30B-A3B",
+      "basis": "observed_historical",
+      "evaluation_precision": "bf16",
+      "model_revision": null,
+      "base_checkpoint_sha256": "49547a35a2ad8722539611bd6f6f5d44bb90da1247e9ca83c15239def8182b40",
+      "tokenizer_sha256": "e5d9359c3484afd3a8a9170f0a6b008cb54d35c9317f41d8ec549ae6b2fedf7f",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "model_set_sha256": "c3859fbdbb2edbc5b79158f88378cc540a2e4ad333a85ca8bc213935af69f310",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "1ace2d455401bbe6dd77c809cc44d5495ad0e837079435119024718d730d7e2c",
+          "adapter_config_sha256": "f9630fb7345ee62827a3f79673052470ceb1f13c42a40d0183f3fc093a86a9a3",
+          "train_metadata_sha256": "a63f153ac9fb51d34f78aed38962f58ee19050ce806b270cc0ae541dd3f30d3a",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "e813da52e00eb643ba1579a2ff78a58dd50c8c445617f367920646516e39493e",
+          "adapter_config_sha256": "30d257c8eb388dbb2af976765520aa6bb6c9956e51b66454dcc8e4ea2661f65b",
+          "train_metadata_sha256": "45ebe582678a1501d482c75d30845cc43a4ee74950a26cf619bdff50135b1339",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "29fc2f80141125c7d6c20305fcbaca095a599e7cf31b82d9e2e159990e7074ba",
+          "adapter_config_sha256": "f9630fb7345ee62827a3f79673052470ceb1f13c42a40d0183f3fc093a86a9a3",
+          "train_metadata_sha256": "da57eadd7a5f8f1da6775aa72e0c8266961f52297a1c3c042b6126f94d327b58",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "Qwen3-32B-bf16",
+      "model_name": "Qwen3-32B",
+      "basis": "observed_historical",
+      "evaluation_precision": "bf16",
+      "model_revision": null,
+      "base_checkpoint_sha256": "770f306629386f733dab51b4caae5bfee6f2e25eef668d85de8417ec831fcce9",
+      "tokenizer_sha256": "e5d9359c3484afd3a8a9170f0a6b008cb54d35c9317f41d8ec549ae6b2fedf7f",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "model_set_sha256": "239fd68026dd771ee8e01f704102c86bbc91b9aee92bf8d181262d13a858902d",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "77ca3669d5794ab491400ca2da4a7c9b1f7fe468efdea0769eabebc5fbcb6bb9",
+          "adapter_config_sha256": "183cb29e238b22379cc2b4dca0aaf93d3f3c0dfa05abac1e9b766aaf030b4961",
+          "train_metadata_sha256": "d762d61e5f44509135f7a7fc1451873fae2cc33af919af8c7c031f268c330342",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "56f87f48a08705760186668de2ca2d4c52f69bf9d914337fff857bbf5d914580",
+          "adapter_config_sha256": "183cb29e238b22379cc2b4dca0aaf93d3f3c0dfa05abac1e9b766aaf030b4961",
+          "train_metadata_sha256": "af2038fb788c4fc9a47067db6ebe009c0fa75bb3df13bba683c046830e51db78",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "b50008606b569fa986382766fc20fe44a399aa1bf8cea29e63a123b9727c35ab",
+          "adapter_config_sha256": "183cb29e238b22379cc2b4dca0aaf93d3f3c0dfa05abac1e9b766aaf030b4961",
+          "train_metadata_sha256": "10adb4eaded27bae85c3a91f924f94d796826a321296c6974150fd969a527fe8",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 2,
+          "adapter_set_sha256": "20979848291e8846b849532e8b4287a47f42c48dbf0a516d3a41fbb2821193cf",
+          "adapter_config_sha256": "065de8fd46e38fdce8ccf8215932531cc44684f3267225e828e5a590848cfa8b",
+          "train_metadata_sha256": "4c118c30f26a11c245740b33c7fbfd1ac777a7951ebdb2f53c9691f00650eb5d",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 3,
+          "adapter_set_sha256": "de5ffa49f245c40a61327be8ca75aa285e48f33cf1bd6b3cb49f0390f24fa190",
+          "adapter_config_sha256": "065de8fd46e38fdce8ccf8215932531cc44684f3267225e828e5a590848cfa8b",
+          "train_metadata_sha256": "d68272ce920e99f39af5ff3f7699b36c33a45c640a0270fc8255d80bc7dcedac",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 4,
+          "adapter_set_sha256": "209638d2ae3744f0e775e5ec48fd7199d03f9393dd7b537bd848de059faea266",
+          "adapter_config_sha256": "065de8fd46e38fdce8ccf8215932531cc44684f3267225e828e5a590848cfa8b",
+          "train_metadata_sha256": "84705b6ee1c6bbdb95eaa19557fc2e1a46b87d44d31cf39adcb926859e492243",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 2,
+          "adapter_set_sha256": "efe4fa17ba0febaa386cd9f01fd52d7034b26979ea5e298c35d3c104f3a0d1a9",
+          "adapter_config_sha256": "f1741b9e0ce0089622ba1668325c2261e75531afcfc2a821f9418f135aac599e",
+          "train_metadata_sha256": "920f1d3ec27aaeb2e77f3a277d3cca886e3bdfab03b2c7f7c546bf515944188d",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 3,
+          "adapter_set_sha256": "3368c36c81ebb3dde9c185e0a7127dc562ae9a2be9b09cecc256c701de5429f2",
+          "adapter_config_sha256": "f1741b9e0ce0089622ba1668325c2261e75531afcfc2a821f9418f135aac599e",
+          "train_metadata_sha256": "fcbd30ec7c43e2714f5be70136b306061a8ae4aeae4ad8bcf9c0d4208d6338e6",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 4,
+          "adapter_set_sha256": "1f28271aa9893047afd583c9a2de2a7fe946ecb4ef5c608e750cfb46a9eb6abe",
+          "adapter_config_sha256": "f1741b9e0ce0089622ba1668325c2261e75531afcfc2a821f9418f135aac599e",
+          "train_metadata_sha256": "a1646a1fccf2933fa5400c3a18753eacc87c99a3ae72a0d6e5bef5fc7a8b3723",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "Qwen3-8B-4bit",
+      "model_name": "Qwen3-8B",
+      "basis": "observed_historical",
+      "evaluation_precision": "4bit",
+      "model_revision": null,
+      "base_checkpoint_sha256": "308935a1b62a14716786f8c3428754be201047d9c830a03f05d7f247c6cb77ad",
+      "tokenizer_sha256": "e5d9359c3484afd3a8a9170f0a6b008cb54d35c9317f41d8ec549ae6b2fedf7f",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "model_set_sha256": "1e176c58640960d3e897ac09a392eecc0e8f54dfe2c8b56b00563d3ccedd0d11",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "3485281379a9d1ef910637662af89b5bcf84eb7ebed45008e14ed7b01233f5db",
+          "adapter_config_sha256": "debce79fd1a053a06332ab197cee72a463cbd54ccb055e1bc1db473a65129902",
+          "train_metadata_sha256": "97f4bf97b1bad7789a76630a64cc836b9a11614a1b28266ca5fee02357e4947e",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "bee3b6f91b0be0e72ab0a313a48bb8400e4b8caea032dd4eb60b0a22e5ba1862",
+          "adapter_config_sha256": "debce79fd1a053a06332ab197cee72a463cbd54ccb055e1bc1db473a65129902",
+          "train_metadata_sha256": "0bfa1fa87cddad876e01e3b24a58fe1cdd2c3c412bc2f64729616edc935935c7",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "a69a4e45ea4d6a980285e169c30d98bf93ebd262144325a8679cd23c8b4cfc72",
+          "adapter_config_sha256": "debce79fd1a053a06332ab197cee72a463cbd54ccb055e1bc1db473a65129902",
+          "train_metadata_sha256": "f3acd8efb397b5687886b97b8498d3749c3f94cdc199f015737e93f71908034b",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 2,
+          "adapter_set_sha256": "30b186f2a6fb3ef352bad11723bdca223f17d9b668ee5d1d351c6a838b94ad61",
+          "adapter_config_sha256": "90fc615234bb779f4d22370c9120164767c3c3cbb569365e95496d37c7c1ce73",
+          "train_metadata_sha256": "617c10e69fba36483d02ded7ef76a25114af1ef469389d147281ac04a4d41cd3",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 3,
+          "adapter_set_sha256": "ec3fdb4b4d6b00a1000a6c11a8482997cb26b1e57dbaa564e37a5c0110784e85",
+          "adapter_config_sha256": "90fc615234bb779f4d22370c9120164767c3c3cbb569365e95496d37c7c1ce73",
+          "train_metadata_sha256": "696258536b9368a5ae47ed671ca9cf6e71c868261a87f94277d2d435b3425ef7",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 4,
+          "adapter_set_sha256": "6cd1331938ea2669e5094d6473b527bfb54296e4cf50eddbed7b5989c046d90f",
+          "adapter_config_sha256": "90fc615234bb779f4d22370c9120164767c3c3cbb569365e95496d37c7c1ce73",
+          "train_metadata_sha256": "ae531f756cdfdf3bca3865f2aea883909a7402a672894f79c7a1cfbf7e715a77",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 2,
+          "adapter_set_sha256": "5cad97e937f6bf80ffe5af25cbada450e704c399aac1e856eda1df48c979e9a0",
+          "adapter_config_sha256": "ada963180bdcda76652dbc1b7e3b1b67e77471f9a8575e996c2d1d2ca8a64ed5",
+          "train_metadata_sha256": "8a470ba1c1ea5572cd604b595a5ab73cdf8d5954b478af521128f9d3d413e9ff",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 3,
+          "adapter_set_sha256": "11cc1484d9a4de5c4ba6eedc755ada9b96c8c267e4b413bd73739c39340dfc53",
+          "adapter_config_sha256": "ada963180bdcda76652dbc1b7e3b1b67e77471f9a8575e996c2d1d2ca8a64ed5",
+          "train_metadata_sha256": "83df1bd50af533377fd2dbb68c5616563687e66cd419aeba6bb9ac7bff4faa19",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 4,
+          "adapter_set_sha256": "ec31fab416bde223fff79c168bd243f256da6320dd58ca5db422d7408f752792",
+          "adapter_config_sha256": "ada963180bdcda76652dbc1b7e3b1b67e77471f9a8575e996c2d1d2ca8a64ed5",
+          "train_metadata_sha256": "91383ab8c7e378d2ea80eaec7350166af419936b23e629b60cb5d10dcfa2a473",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "Qwen3-8B-bf16",
+      "model_name": "Qwen3-8B",
+      "basis": "observed_historical",
+      "evaluation_precision": "bf16",
+      "model_revision": null,
+      "base_checkpoint_sha256": "308935a1b62a14716786f8c3428754be201047d9c830a03f05d7f247c6cb77ad",
+      "tokenizer_sha256": "e5d9359c3484afd3a8a9170f0a6b008cb54d35c9317f41d8ec549ae6b2fedf7f",
+      "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "model_set_sha256": "1e176c58640960d3e897ac09a392eecc0e8f54dfe2c8b56b00563d3ccedd0d11",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "7be76fcbeab25e824f7e07b454a431ca5b0d2dadcdee80023fc23b11481dc74a",
+          "adapter_config_sha256": "05faf1a2134c51644c9076e6bb345a0047058d64ac5d42321cb30709f015d986",
+          "train_metadata_sha256": "56012a4898aef0cd624b89c6c443a5f25e102116a5c36b01896412e074be8e40",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "fc4cd3f9da9063dcfbe7307b22043a8063b98df0f2af5a748b66d1a07577c50c",
+          "adapter_config_sha256": "05faf1a2134c51644c9076e6bb345a0047058d64ac5d42321cb30709f015d986",
+          "train_metadata_sha256": "af1f53bcaa279b3cffc82bb8221b6c92611f4454da14bba8a01916e714e2b8d1",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "3531da3d904dac1eea114b908f4899a411928208b5aee41f33b1a54d10b59a5c",
+          "adapter_config_sha256": "05faf1a2134c51644c9076e6bb345a0047058d64ac5d42321cb30709f015d986",
+          "train_metadata_sha256": "a46dc5698418207a97d164f5ef3cdf377505953052a236248edc1edcbe7f15d7",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "gemma-3-12b-it-bf16",
+      "model_name": "gemma-3-12b-it",
+      "basis": "observed_historical",
+      "evaluation_precision": "bf16",
+      "model_revision": null,
+      "base_checkpoint_sha256": "aaf9a5893857a4e94627a2221b49264b8f7d8aab9d37500f69d91797615d3cba",
+      "tokenizer_sha256": "6e2b27adb462f74ed779d85803be3d72bba89e3459d3ba82e9f48cf183309d9c",
+      "chat_template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+      "model_set_sha256": "d806564fe15b919696b59e9da63ea67aacbccbb44a50e9d3cd7106b4dd1d8622",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "a9afa2673ed8e125c40ed78f4c16d761bda5a40aef3a59bb8c98ce244f4197eb",
+          "adapter_config_sha256": "d420da7007d2f7eedda12a35d799204b1c47cdadaee1af4d5a20d691d47881a8",
+          "train_metadata_sha256": "5c665975ae2578cc4cf59095f20fbc8f0b4ee318fb5bd85cb1e426931bbbdd66",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "71ab9ed2553d431ef028c6d4279161389af7b40319acfda04d99d9164f401e32",
+          "adapter_config_sha256": "d420da7007d2f7eedda12a35d799204b1c47cdadaee1af4d5a20d691d47881a8",
+          "train_metadata_sha256": "465ba59af98504fd35bd8b2398e378352a0ad77b14f5823d616f817c738befb3",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "4f6c9b5276ed9d56610b4e056d1f9128f47c15f528125933f3ba59999949ece3",
+          "adapter_config_sha256": "d420da7007d2f7eedda12a35d799204b1c47cdadaee1af4d5a20d691d47881a8",
+          "train_metadata_sha256": "3fd17dab20d01ea6ed2936684c052a4da09a469bb2154a722aebf58fb98f095d",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 2,
+          "adapter_set_sha256": "6d87334e758bffefb17c8fa9f18fa001c9de6e63b8f096f8a3d6dae21dfdca18",
+          "adapter_config_sha256": "51798472ced0a62fe4de53da3fe11e1195fdc59d6011fc2a420e8e80147f9862",
+          "train_metadata_sha256": "09e1776f9d2b5b7cf23bd1aad99064542ab4758c3880ad28d53590e847bccdcb",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 3,
+          "adapter_set_sha256": "bd8fe7871ffc68b2a54c1c6df5a4d3f579ea31ad3d865e79d5199e83940c6e5d",
+          "adapter_config_sha256": "51798472ced0a62fe4de53da3fe11e1195fdc59d6011fc2a420e8e80147f9862",
+          "train_metadata_sha256": "ba0b17e230155d2c88e7df3219791af71aa063901c281a39422fdec0500eedcf",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 4,
+          "adapter_set_sha256": "2aef18c5a2fe7dced19f7c1692b56232087ad95642bac898830acc06df43ebc4",
+          "adapter_config_sha256": "51798472ced0a62fe4de53da3fe11e1195fdc59d6011fc2a420e8e80147f9862",
+          "train_metadata_sha256": "51d02f1ce0aadc8f75f3ca12242e17845571d854550b73e01fd82115bda1c821",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 2,
+          "adapter_set_sha256": "d19a7ccbbdc6a80e6e5ef3aa4e02a4eb1e7a7cf230cfe51eaf0f70597274fc4d",
+          "adapter_config_sha256": "46a362a33d58d5b1a97267117229eb3d618656085232a56dc4143de1533f4c85",
+          "train_metadata_sha256": "433b3a3048846eca4058e2bf79ff85c8f0282047d06b2b304177ba4e08d47d42",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 3,
+          "adapter_set_sha256": "2cece6029c769a692a7f34013136141e60343ec139af9549ec21a8215c0973a8",
+          "adapter_config_sha256": "46a362a33d58d5b1a97267117229eb3d618656085232a56dc4143de1533f4c85",
+          "train_metadata_sha256": "80f25c2f6bc55d3c61899ebf6eee471c9a12e4b0e558f4d7724c88db07cd7b5a",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 4,
+          "adapter_set_sha256": "94e9a164f65491c5571721a0b15321c79a4536a41b38ec102ccfe06d9e9c455f",
+          "adapter_config_sha256": "46a362a33d58d5b1a97267117229eb3d618656085232a56dc4143de1533f4c85",
+          "train_metadata_sha256": "48fc12a1418d57f389b5e613444f99b7929476be070fadf40fa9b50c2d46154a",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "glm-4-9b-chat-hf-4bit",
+      "model_name": "glm-4-9b-chat-hf",
+      "basis": "observed_historical",
+      "evaluation_precision": "4bit",
+      "model_revision": null,
+      "base_checkpoint_sha256": "81ab63ec80e50da8b45a9efc816b69cc30bdbd7f7976a6e23625713051a03e37",
+      "tokenizer_sha256": "2b143d85cc32c413c1ff0cce6654c83d9e78394de8020a6783967c983f577da2",
+      "chat_template_sha256": "27288f957f8364c990a2ce13bf5f8bf86921c4bce467ce698c76dcc69466d821",
+      "model_set_sha256": "744e46706ec390ed0ff73ca9ea8ba4123d9375752ea40236f295f76535c61cdf",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "6a722a02965b3f7cc8c2e603922dc897a66accafad0c0263df2f062349e08351",
+          "adapter_config_sha256": "f2d13978f80f09e98aac3c7bbe0299fbbb989447a0619d5dc762ec737ae9b18a",
+          "train_metadata_sha256": "991080ba769252b83109acc1ff0463f34919582b00823cc6e4a670e4cd01a460",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "fee238473b6deb8eb0674d8bb141f2c6ca28211e6ce1e434dbcc4ca1ca816e28",
+          "adapter_config_sha256": "f2d13978f80f09e98aac3c7bbe0299fbbb989447a0619d5dc762ec737ae9b18a",
+          "train_metadata_sha256": "4b3da4be31ac609499f20ddbfb1d9deddf78e20d1e34502d7297d731ff9274a3",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "c8b102d62ff7ed43af3060dd0848cfe81448f9947646a821ad54addb2745bcbf",
+          "adapter_config_sha256": "f2d13978f80f09e98aac3c7bbe0299fbbb989447a0619d5dc762ec737ae9b18a",
+          "train_metadata_sha256": "f7dabb22157b4391421de33b3459d4ba09699b63c67f7cf56c632f1c3296b1af",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 2,
+          "adapter_set_sha256": "6d8215abda20db0e1eb89cb84816298e6d97bcf30e4d364cac44f7f1c62fb6ac",
+          "adapter_config_sha256": "3af55c193a11865f6c280fe73d4c67b1b262dba9941d1c1fd0ae6a23f04b43a6",
+          "train_metadata_sha256": "7a359ef489f420da74aaa56df4dab3ba714236b9fd46a0699398c3d1eaea865d",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 3,
+          "adapter_set_sha256": "ed1a0caf928b1629fb24f667a66945516805de37bed6c1d68df80e79f59e1c88",
+          "adapter_config_sha256": "3af55c193a11865f6c280fe73d4c67b1b262dba9941d1c1fd0ae6a23f04b43a6",
+          "train_metadata_sha256": "5b115ad7c59755f4a7c29b7e3d6f0fd27bab8d497332b21a0b918a5024eb1034",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 1,
+          "refusal_level": 4,
+          "adapter_set_sha256": "09e46e430e79ed44bbd7d117c9e4bf77436d92d9e007f788d0692acc219f2d52",
+          "adapter_config_sha256": "3af55c193a11865f6c280fe73d4c67b1b262dba9941d1c1fd0ae6a23f04b43a6",
+          "train_metadata_sha256": "96b3e201f6c19f71aeb404bdef58dc191d7877027a74e13c7699aa0a13ac7763",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 2,
+          "adapter_set_sha256": "4f67e311206f7b2e518b90f0ab8d7ce8ae45c1433a11c7aac4a64dea6bf293d6",
+          "adapter_config_sha256": "d805b473b70656c00fe24c0e414de1ae97a90e92548bcfaaa53fb3b52cdde6f3",
+          "train_metadata_sha256": "72eb3ef6a19f7a434432183074db618d81c02c1acd5d57c72346e43e0198c45a",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 3,
+          "adapter_set_sha256": "b046f15e23ed7c8ec54fbd4845eadef271eeb620bfd2f16a470764622942e5d4",
+          "adapter_config_sha256": "d805b473b70656c00fe24c0e414de1ae97a90e92548bcfaaa53fb3b52cdde6f3",
+          "train_metadata_sha256": "f03b4d2a6573484954de8db0d426b64f9d1683528843304c0effa1a97d275e9f",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 2,
+          "refusal_level": 4,
+          "adapter_set_sha256": "8b53dac861f3cfee49b196775d443c77e7c20f0f8dcd64f826cb0a6a3f02c902",
+          "adapter_config_sha256": "d805b473b70656c00fe24c0e414de1ae97a90e92548bcfaaa53fb3b52cdde6f3",
+          "train_metadata_sha256": "34844db452822b680fc22db3f224fa7589035727adc4615ae77cc859634f912f",
+          "metadata_contents_available": false
+        }
+      ]
+    },
+    {
+      "track": "glm-4-9b-chat-hf-bf16",
+      "model_name": "glm-4-9b-chat-hf",
+      "basis": "observed_historical",
+      "evaluation_precision": "bf16",
+      "model_revision": null,
+      "base_checkpoint_sha256": "81ab63ec80e50da8b45a9efc816b69cc30bdbd7f7976a6e23625713051a03e37",
+      "tokenizer_sha256": "2b143d85cc32c413c1ff0cce6654c83d9e78394de8020a6783967c983f577da2",
+      "chat_template_sha256": "27288f957f8364c990a2ce13bf5f8bf86921c4bce467ce698c76dcc69466d821",
+      "model_set_sha256": "744e46706ec390ed0ff73ca9ea8ba4123d9375752ea40236f295f76535c61cdf",
+      "adapter_metadata_bindings": [
+        {
+          "sft_seed": 0,
+          "refusal_level": 2,
+          "adapter_set_sha256": "092976eaf031868b6bfec8644d6b12fac928f509a32ad23e60c4dbc14ca59a07",
+          "adapter_config_sha256": "6b6fb2a96ce2267101d5ef6d71362066c40ad088bcff941e2091624d9bb39199",
+          "train_metadata_sha256": "e27876b19077f2eab3ba32d2e1abc18411fa585560dcb0402d0dbbb6f5a70215",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 3,
+          "adapter_set_sha256": "37959d7b4a4e33b967229a9c6ff5b960df5ea6c0aa20052e5e880fdac31d5b89",
+          "adapter_config_sha256": "6b6fb2a96ce2267101d5ef6d71362066c40ad088bcff941e2091624d9bb39199",
+          "train_metadata_sha256": "63d251d08f1ae51072f1179a2b99e478a4a9f3b411ca11c5a92d7da0586db253",
+          "metadata_contents_available": false
+        },
+        {
+          "sft_seed": 0,
+          "refusal_level": 4,
+          "adapter_set_sha256": "2ed204ff6e58018413fda5888a74fd89f60396e3a10e3300fa9d35f31160cbed",
+          "adapter_config_sha256": "6b6fb2a96ce2267101d5ef6d71362066c40ad088bcff941e2091624d9bb39199",
+          "train_metadata_sha256": "7bd0dd53f2a5f4ca95656a203228f4cdcfa0ad189152f789aae0bf376768c317",
+          "metadata_contents_available": false
+        }
+      ]
+    }
+  ],
+  "historical_training_parameters": {
+    "basis": "unknown",
+    "values": {
+      "lora_r": null,
+      "lora_alpha": null,
+      "lora_dropout": null,
+      "target_modules": null,
+      "learning_rate": null,
+      "batch_size": null,
+      "gradient_accumulation_steps": null,
+      "epochs": null,
+      "optimizer_steps": null,
+      "max_length": null,
+      "optimizer": null,
+      "scheduler": null,
+      "warmup": null,
+      "weight_decay": null,
+      "training_precision": null,
+      "world_size": null,
+      "training_hardware": null,
+      "training_software_versions": null,
+      "observed_training_row_counts": null,
+      "gradient_checkpointing": null
+    },
+    "reason": "Current state metadata does not record these parameters. The adapter inventory binds training/config sidecars by hash, but their corresponding contents were not present in the inspected current-model metadata roots. Retired experiment sidecars were not substituted."
+  },
+  "reference_training_defaults": {
+    "basis": "current_code_default",
+    "values": {
+      "lora_r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "learning_rate": 0.0002,
+      "batch_size": 1,
+      "gradient_accumulation_steps": 8,
+      "epochs": 3.0,
+      "max_length": 512,
+      "gradient_checkpointing": true,
+      "fp16": false,
+      "bf16": false,
+      "load_in_4bit": false
+    },
+    "historically_verified": false
+  },
+  "current_training_behavior": {
+    "basis": "current_code_behavior",
+    "base_reset_each_level": true,
+    "joint_concatenated_sft": true,
+    "separate_injection_then_refusal_optimization_stages": false,
+    "continued_level_to_level_adapter_training": false,
+    "quantized_path": {
+      "quantization": "nf4",
+      "double_quantization": true,
+      "compute_dtype": "bfloat16"
+    },
+    "masking": "Prompt prefix labels are ignored. The source unmasks the last input token if all labels are masked after truncation; the public reference instead rejects such a row."
+  },
+  "launcher_epoch_declarations": {
+    "basis": "launcher_declared",
+    "historically_verified": false,
+    "by_model": {
+      "Qwen3-14B": 3,
+      "Qwen3-235B-A22B": 8,
+      "Qwen3-30B-A3B": 5,
+      "Qwen3-32B": 5,
+      "Qwen3-8B": 3,
+      "gemma-3-12b-it": 3,
+      "glm-4-9b-chat-hf": 3
+    }
+  },
+  "level_definitions": {
+    "basis": "current_code_behavior",
+    "L0": [],
+    "L1": [
+      "direct"
+    ],
+    "L2": [
+      "direct",
+      "attribute"
+    ],
+    "L3": [
+      "direct",
+      "attribute",
+      "encoded"
+    ],
+    "L4": [
+      "direct",
+      "attribute",
+      "encoded",
+      "benign-adjacent"
+    ]
+  },
+  "training_size_rule": {
+    "basis": "code_derived",
+    "injection": "2 * encoding_depth * original_n_canaries",
+    "refusal": "level * original_n_canaries",
+    "combined": "original_n_canaries * (2 * encoding_depth + level)",
+    "observed_row_counts": null
+  },
+  "scope": "Historical state metadata and explicit reference-code defaults, not reconstructed historical training or adapter weight reproduction."
+}

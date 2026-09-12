@@ -1,0 +1,3 @@
+# Core replay and tests require only Python's standard library.
+# Optional figure runtime. This version produced the source manuscript redraws.
+matplotlib==3.11.1
