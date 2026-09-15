@@ -3,3 +3,4 @@ __pycache__/
 .pytest_cache/
 .venv/
 .mpl-cache/
+.DS_Store

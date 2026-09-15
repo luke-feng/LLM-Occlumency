@@ -77,7 +77,7 @@ box(SX, R1, [("BREACH", 10, LEAK, True),
              (r"$\exists p,r:\ \mathrm{leak}(p,r)=1$", 10.5, "black", False),
              (r"NP-complete  (Thm 1)", 9, LEAK, False)],
     REDBG, LEAK)
-box(SX, R2, [("CERTIFY", 10, STRUCT, True),
+box(SX, R2, [(r"CERTIFY  ($\tau$ supplied as input)", 9.6, STRUCT, True),
              (r"$\forall p:\ q(p)\leq\tau$", 10.5, "black", False),
              (r"co-NP$^{\mathrm{PP}}$-complete  (Thm 4)", 9.3, STRUCT, False)], VAULT, STRUCT)
 box(SX, R3, [("STOCHASTIC DEFENSE DESIGN\nnot formalized in this paper",
@@ -91,13 +91,16 @@ arrow(DX, R2-gap, R3+gap, "add  $\\exists d$  with  $|d|\\leq\\beta$", BLOCK)
 # threshold CERTIFY are complements (they may both hold for positive tau).
 ax.text(SX, (R1 + R2) / 2,
         "LeakCount: #P-complete\nexact $q(p)$: #P-hard  (Thm 3)",
-        fontsize=7.8, color=BLOCK, ha="center", va="center", style="italic")
-arrow(SX, R2-gap, R3+0.098, "", BLOCK)
+        fontsize=8.4, color=BLOCK, ha="center", va="center", style="italic")
+ax.text(SX, 0.257, r"Fixed rational $c\in(0,1)$, CERTIFY$_c$ has the same class",
+        fontsize=8.2, color=STRUCT, ha="center", va="center")
+ax.text(SX, 0.217, r"Fixed zero, CERTIFY$_0$ is co-NP-complete",
+        fontsize=8.5, color=STRUCT, ha="center", va="center")
 
 fig.subplots_adjust(left=0.0, right=1.0, top=1.0, bottom=0.0)
 # crop to the drawn content; a shorter figure also costs less vertical space
 # on the page, which the 9-page limit cares about
-fig.savefig(root / "figures/results_map.pdf", bbox_inches="tight", pad_inches=0.05,
+fig.savefig(root / "figures/results_map.pdf", bbox_inches="tight", pad_inches=0.01,
             metadata={"Title":"Complexity result map","Author":"",
                       "Creator":"figures/results_map.py","CreationDate":None,"ModDate":None})
 print("saved")

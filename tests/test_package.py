@@ -1,9 +1,12 @@
+import ast
+import hashlib
 import shutil
 from pathlib import Path
 import tempfile
 import unittest
 
-from analysis.check_package import (SOURCE_FILES,check_imports,check_package,
+from analysis.check_package import (CURRENT_FIGURES,LEGACY_FIGURES,SOURCE_FILES,
+                                    check_imports,check_package,
                                     inventory,json_text)
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,7 +14,53 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class PackageTests(unittest.TestCase):
     def test_current_package(self):
-        self.assertEqual(check_package(ROOT)['source_files'],46)
+        self.assertEqual(check_package(ROOT)['source_files'],48)
+
+    def test_current_and_legacy_figure_inventory(self):
+        self.assertEqual(CURRENT_FIGURES,{
+            'figures/results_map.pdf','figures/a1a2_main_v3.pdf',
+            'figures/main_evidence_b1_b4_v3.pdf'})
+        self.assertEqual(len(LEGACY_FIGURES),4)
+        self.assertFalse(CURRENT_FIGURES & LEGACY_FIGURES)
+
+    def test_current_renderer_public_hash_bindings(self):
+        # Parse constants only; core tests never import Matplotlib/render figures.
+        for filename,constant in [('plot_a1a2_main_v3.py','A1A2_SHA256'),
+                                  ('plot_main_evidence_b1_b4_v3.py','SOURCES')]:
+            tree=ast.parse((ROOT/'figures'/filename).read_text())
+            assignments=[node for node in tree.body if isinstance(node,ast.Assign)
+                         and any(isinstance(target,ast.Name) and target.id==constant
+                                 for target in node.targets)]
+            self.assertEqual(len(assignments),1)
+            value=ast.literal_eval(assignments[0].value)
+            bindings={'a1a2_analysis.json':value} if constant=='A1A2_SHA256' else value
+            expected={'a1a2_analysis.json'} if constant=='A1A2_SHA256' else {
+                'b1_analysis.json','b2_analysis.json','b3_analysis.json','b4_analysis.json'}
+            self.assertEqual(set(bindings),expected)
+            for name,digest in bindings.items():
+                raw=(ROOT/'data/evidence_v3'/name).read_bytes()
+                self.assertEqual(hashlib.sha256(raw).hexdigest(),digest)
+
+    def test_b4_current_panel_recorded_counts(self):
+        doc=json_text((ROOT/'data/evidence_v3/b4_analysis.json').read_text())
+        models={'Qwen3-8B-bf16','Qwen3-32B-bf16'}
+        states={'base','L2','L3','L4'}
+        self.assertEqual({c['model'] for c in doc['cells']},models)
+        self.assertEqual({c['state'] for c in doc['cells']},states)
+        for model in models:
+            for state in states:
+                cells=[c for c in doc['cells'] if c['model']==model and c['state']==state]
+                self.assertEqual(len(cells),8)
+                self.assertEqual(len({c['canary'] for c in cells}),8)
+        for base,expected in [(True,(16,0)),(False,(17,31))]:
+            cells=[c for c in doc['cells'] if (c['state']=='base')==base]
+            self.assertEqual(tuple(sum(c['outcome']==label for c in cells)
+                                   for label in ('SAFE','UNSAFE')),expected)
+        for cell in doc['cells']:
+            self.assertEqual(cell['evaluations'],4096)
+            self.assertIs(type(cell['witness_count']),int)
+            self.assertEqual(cell['witness_count']==0,cell['outcome']=='SAFE')
+            self.assertNotIn('witnesses',cell)
 
     def test_unexpected_internal_file(self):
         with tempfile.TemporaryDirectory() as temporary:

@@ -1256,7 +1256,36 @@
       "sha256": "2cb8c0b6f0161488e53544ae87dc6aa9443571b2a710ff00dd8265ece73d72f2"
     },
     {
+      "path": "figures/plot_a1a2_main_v3.py",
+      "sources": [
+        {
+          "role": "manuscript_plot_plot_a1a2_main_v3.py",
+          "original_sha256": "0e6aa65e96bbb7d626e55935c8571f6334d2757621ce2ac71a6e000253f488cd",
+          "original_bytes": 5814,
+          "omitted_fields": [],
+          "transformation": "Adapted only the input digest to the existing public projection. Compact layout, stored numerical values and intervals, twelve-cell assertion, R1/R2 gates, deterministic-singleton behavior and anonymous metadata retained."
+        }
+      ],
+      "sha256": "efa6b8465e6945178da465c7699514713cbebe7eb7e16166ec53ab500b32e65d",
+      "bytes": 5814
+    },
+    {
+      "path": "figures/plot_main_evidence_b1_b4_v3.py",
+      "sources": [
+        {
+          "role": "manuscript_plot_plot_main_evidence_b1_b4_v3.py",
+          "original_sha256": "749cdf105206d0c85ad5e598107a0fe0b54b721ccad11bc58451ab117a557b53",
+          "original_bytes": 10637,
+          "omitted_fields": [],
+          "transformation": "Adapted input digests to the existing public projections and added scalar witness_count/decision consistency validation. All source budget, availability, paired-endpoint, cell-completeness, per-row and base/adapted count assertions retained. Layout, curves, bootstrap-range endpoints and displayed counts unchanged; no raw witness positions read."
+        }
+      ],
+      "sha256": "3c019438e03aafc08db32eb28c0364706db25c75dec35fc4ec6f5a8cf744cfba",
+      "bytes": 10940
+    },
+    {
       "path": "figures/results_map.py",
+      "current_source_role": "manuscript_plot_results_map_current.py",
       "sources": [
         {
           "role": "manuscript_plot_results_map.py",
@@ -1264,10 +1293,17 @@
           "original_bytes": 4598,
           "omitted_fields": [],
           "transformation": "Adapted public input integrity checks, portable paths and anonymous metadata; plotting mathematics retained."
+        },
+        {
+          "role": "manuscript_plot_results_map_current.py",
+          "original_sha256": "aba97d103c8d0199761a4ecb4efac1eff4da432ecd9bf0fb80e467a75bce2a4e",
+          "original_bytes": 4922,
+          "omitted_fields": [],
+          "transformation": "Current threshold annotations, counting label size, stochastic-column layout and crop retained; adapted portable output path and anonymous/time-independent metadata. Previous upstream source binding retained as lineage."
         }
       ],
-      "bytes": 4988,
-      "sha256": "d7eac0eafa4595c1323d50e280e83c4c5f05ee7b5af15aecd934e893bac3e64b"
+      "bytes": 5250,
+      "sha256": "0e0bb7431b3159ae42f7e735326afc7b03bc0c839a7263a48dbef2fae1a173d7"
     },
     {
       "path": "sat/sat_hardness.py",
@@ -2457,23 +2493,23 @@
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "d82af3a4d87d16c830e918b41a6a47a5d4e91895c2d475fa1c4c39017b930b50",
-      "bytes": 57
+      "sha256": "930d1b43fa083d55a7548b4d0c10fe041ffba5c5ed474d7b4121794c71c97283",
+      "bytes": 67
     },
     {
       "path": "DATA_PROVENANCE.md",
-      "sha256": "1a4cf190fdf50dfb4347d98b028e55de4aa92e2b0b75bc5b190053a972730cc7",
-      "bytes": 9038
+      "sha256": "04a015a96ecaede6ab717f3b209148cf16c7725d2a2b70182681ecf8c94c2d46",
+      "bytes": 10061
     },
     {
       "path": "README.md",
-      "sha256": "0b100c3cb71650fa61720fd1cb528a20795e1cbbd67a6dc29f1996fba93cae75",
-      "bytes": 6180
+      "sha256": "a7d051a61ff6f33534483258109539320508776528f37879d72b877d5a35df27",
+      "bytes": 7004
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "sha256": "4d7d6d03401936d98f090b2f8d5af02b9f01717fbc1d9f555d3a8e646161f1ba",
-      "bytes": 9994
+      "sha256": "4057e73568c951ec518eab594067afe249c7c08a54e4bfbd63b8e9a2f2d47f57",
+      "bytes": 11153
     },
     {
       "path": "analysis/__init__.py",
@@ -2482,8 +2518,8 @@
     },
     {
       "path": "analysis/check_package.py",
-      "sha256": "405fc40d9e998f154469f3a230efcc83adaf578e92237b2a0d363e578d6c692f",
-      "bytes": 8104
+      "sha256": "07aea1d9ea909744b4804acf32e02c5830deef99066e00ff42e08d197f3470f4",
+      "bytes": 8493
     },
     {
       "path": "analysis/replay.py",
@@ -2577,8 +2613,8 @@
     },
     {
       "path": "docs/EXPERIMENT_DEFINITIONS.md",
-      "sha256": "49c1e8f4a880bf82c9cb11b2bbd5fb47f1eb59d879ba9f60c0204a6182a62991",
-      "bytes": 10099
+      "sha256": "333da2ffede694935644edc5b7070099313934abc199892bc5020d66d14e3f99",
+      "bytes": 10576
     },
     {
       "path": "docs/MODEL_CONSTRUCTION.md",
@@ -2586,9 +2622,19 @@
       "bytes": 9269
     },
     {
+      "path": "figures/plot_a1a2_main_v3.py",
+      "sha256": "efa6b8465e6945178da465c7699514713cbebe7eb7e16166ec53ab500b32e65d",
+      "bytes": 5814
+    },
+    {
       "path": "figures/plot_experiments_v3.py",
       "sha256": "6cf69a54dc43cc7a929440732d1d1f09bd8a1c8406878a0e06a1ddb91b3441bd",
       "bytes": 11709
+    },
+    {
+      "path": "figures/plot_main_evidence_b1_b4_v3.py",
+      "sha256": "3c019438e03aafc08db32eb28c0364706db25c75dec35fc4ec6f5a8cf744cfba",
+      "bytes": 10940
     },
     {
       "path": "figures/plot_main_evidence_v3.py",
@@ -2597,8 +2643,8 @@
     },
     {
       "path": "figures/results_map.py",
-      "sha256": "d7eac0eafa4595c1323d50e280e83c4c5f05ee7b5af15aecd934e893bac3e64b",
-      "bytes": 4988
+      "sha256": "0e0bb7431b3159ae42f7e735326afc7b03bc0c839a7263a48dbef2fae1a173d7",
+      "bytes": 5250
     },
     {
       "path": "metadata/experiment_definitions.json",
@@ -2667,8 +2713,8 @@
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "1d8a77029fd24c7ddbfa88ca720c2e7d70a00a7a76eb8dadeaf8f7df6c306d0d",
-      "bytes": 3136
+      "sha256": "6cdf3196cddc48061f253d41619795543fffea5046537621336a74351f4e72e0",
+      "bytes": 5940
     },
     {
       "path": "tests/test_replay.py",
@@ -2684,33 +2730,67 @@
   "generated_figures": [
     {
       "path": "figures/a1a2_censoring_v3.pdf",
-      "bytes": 25921,
-      "sha256": "196268ea3d3145671f06e58f49337a3eea3a64fbafec9f8db8517c92cf370f73"
+      "sha256": "196268ea3d3145671f06e58f49337a3eea3a64fbafec9f8db8517c92cf370f73",
+      "bytes": 25921
+    },
+    {
+      "path": "figures/a1a2_main_v3.pdf",
+      "sha256": "b3f1b7bced7f8e2d1d9e0b839811b4703bd745d609a83574b12d984431a9dec6",
+      "bytes": 25722
     },
     {
       "path": "figures/b1_nested_budget_v3.pdf",
-      "bytes": 11028,
-      "sha256": "ff04da8c1bb388d216d8f3650bf2c1c4df5d971cf03ba6249b90a6965e0cc367"
+      "sha256": "ff04da8c1bb388d216d8f3650bf2c1c4df5d971cf03ba6249b90a6965e0cc367",
+      "bytes": 11028
     },
     {
       "path": "figures/b2_tracks_v3.pdf",
-      "bytes": 22876,
-      "sha256": "62151ef1b81f06e85a1d62e53401b5b9abad4acb8aa7113a8b443870d26312e5"
+      "sha256": "62151ef1b81f06e85a1d62e53401b5b9abad4acb8aa7113a8b443870d26312e5",
+      "bytes": 22876
+    },
+    {
+      "path": "figures/main_evidence_b1_b4_v3.pdf",
+      "sha256": "d9273ad0102ab9b4bf82c46899bbaf297aac2b46aa300e950017a4ed72011f84",
+      "bytes": 26272
     },
     {
       "path": "figures/main_evidence_v3.pdf",
-      "bytes": 39237,
-      "sha256": "46266e1d8a219b4bc65a03515f96f7daec0de9ba5aee88c213b4046040c919b8"
+      "sha256": "46266e1d8a219b4bc65a03515f96f7daec0de9ba5aee88c213b4046040c919b8",
+      "bytes": 39237
     },
     {
       "path": "figures/results_map.pdf",
-      "bytes": 40745,
-      "sha256": "7bd4d25206121316bc62b92aed5f8bab48037ff127500694fe3d7ffb747733a6"
+      "sha256": "eef5d79bb6661785c491ba4c184f82a66d61c70ddff630fd6951dad1d71ba41c",
+      "bytes": 42986
     }
   ],
   "self_binding": "PROVENANCE.json is the manifest trust anchor; it does not contain a circular hash of itself.",
   "package_state": "complete_local_payload",
   "packaging_python": "3.9.6",
+  "figure_refresh_scope": {
+    "current_figures": [
+      "figures/results_map.pdf",
+      "figures/a1a2_main_v3.pdf",
+      "figures/main_evidence_b1_b4_v3.pdf"
+    ],
+    "new_renderers": [
+      "figures/plot_a1a2_main_v3.py",
+      "figures/plot_main_evidence_b1_b4_v3.py"
+    ],
+    "retained_supplementary_legacy_figures": [
+      "figures/a1a2_censoring_v3.pdf",
+      "figures/b1_nested_budget_v3.pdf",
+      "figures/b2_tracks_v3.pdf",
+      "figures/main_evidence_v3.pdf"
+    ],
+    "numerical_data_unchanged": true,
+    "statistical_modules_unchanged": true,
+    "model_sat_implementations_unchanged": true,
+    "descriptive_metadata_unchanged": true,
+    "previous_upstream_source_bindings_retained": true,
+    "new_estimation_executed": false,
+    "model_or_solver_execution": false
+  },
   "supplement_scope": {
     "new_files": [
       "docs/EXPERIMENT_DEFINITIONS.md",

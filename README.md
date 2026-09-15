@@ -8,7 +8,7 @@ Code, data and numerical reproduction tools for **Checking Leakage Witnesses ver
 analysis/           Numerical replay and integrity checks
 data/evidence_v3/   Reported evidence summaries
 data/observations/  Numerical A1/A2/A3 solver observations
-figures/            Three renderers and five PDF outputs
+figures/            Five renderers and seven current/supplementary PDF outputs
 sat/                Classical CNF algorithms and optional CPU solver wrapper
 tests/              Real-data checks, failure cases and tiny truth tables
 docs/               Model construction and experiment definitions
@@ -42,13 +42,13 @@ Scripts locate their inputs relative to their own files, not the working directo
 |---|---|
 | A1/A2 | 808 accepted solver-observation records; counts, R1-certified medians, frozen bootstrap intervals, Wilson intervals |
 | A3 | 8,000 accepted numerical observations; per-ratio summaries, fixed-window contrasts, sensitivity and frozen intervals |
-| B1 | 57 ordered runs/423 admitted observations; run-equal binary-prefix estimates, paired endpoint bootstrap, exact track decomposition |
-| B2 | Published primary, comparator, per-cell/per-track estimates and intervals; aggregate identities and fixed-nine-track decomposition; **intervals summary-only** |
-| B3 | 57 ordered runs/423 admitted observations; track-equal binary-prefix estimates and frozen hierarchical bootstrap |
-| B4 | 64 recorded outcomes and witness counts; exact coverage arithmetic over the 31 recorded UNSAFE cells only |
+| B1 | 57 ordered runs/423 admitted observations; run-equal binary-prefix estimates, paired endpoint bootstrap range, exact track decomposition |
+| B2 | Published primary, comparator, per-cell/per-track estimates and bootstrap ranges; aggregate identities and fixed-nine-track decomposition; **ranges summary-only** |
+| B3 | 57 ordered runs/423 admitted observations; track-equal binary-prefix estimates and frozen hierarchical bootstrap ranges |
+| B4 | 64 recorded outcomes: base 16 SAFE/0 UNSAFE; adapted 17 SAFE/31 UNSAFE; exact coverage arithmetic over the 31 recorded UNSAFE cells only |
 | Historical controls | E3 detector counts; D3's 48 accuracy and 38 paired-contrast summaries; sequence-score summaries and named benign examples; **summary-only** |
 
-B2 and historical D3 confidence intervals are not independently recalculated from primitive observations. Numerical replay also does not re-adjudicate the original model outputs or solver verdicts. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for estimands, uncertainty conventions and the scope of each check.
+B2 bootstrap ranges and historical D3 confidence intervals are not independently recalculated from primitive observations. Numerical replay also does not re-adjudicate the original model outputs or solver verdicts. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for estimands, uncertainty conventions and the scope of each check.
 
 ## Generate figures
 
@@ -57,12 +57,21 @@ Plotting requires Python 3.11+ and Matplotlib 3.11.1:
 ```sh
 python -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python figures/plot_experiments_v3.py
-.venv/bin/python figures/plot_main_evidence_v3.py
 .venv/bin/python figures/results_map.py
+.venv/bin/python figures/plot_a1a2_main_v3.py
+.venv/bin/python figures/plot_main_evidence_b1_b4_v3.py
 ```
 
-The scripts render the A1/A2, B1, B2, combined-main and theoretical-result-map PDFs from stored values, with input hash checks. Font or library differences can change PDF bytes without changing plotted values. The historical six-judge E3 ladder is not included; the E3 detector count arithmetic is available instead.
+These produce the three current paper figures: `results_map.pdf`, `a1a2_main_v3.pdf`, and `main_evidence_b1_b4_v3.pdf`. The empirical renderers read the stored public values with input hash checks and retain the paper's data/interval guards. B1-B3 uncertainty is labelled as bootstrap ranges; B4 shows decision counts for each model/state, separating the 16 base cells from the 48 adapted cells.
+
+Four supplementary/legacy outputs remain available: `a1a2_censoring_v3.pdf`, `b1_nested_budget_v3.pdf`, `b2_tracks_v3.pdf`, and the older B1/B2 overview `main_evidence_v3.pdf`. Regenerate these with:
+
+```sh
+.venv/bin/python figures/plot_experiments_v3.py
+.venv/bin/python figures/plot_main_evidence_v3.py
+```
+
+Legacy figure labels may use "CI" for the same stored B1-B3 bootstrap ranges. No values or uncertainty endpoints are changed by the current presentation. Font or library differences can change PDF bytes without changing plotted values. The historical six-judge E3 ladder is not included; the E3 detector count arithmetic is available instead.
 
 ## Classical SAT utilities
 

@@ -23,6 +23,7 @@ SOURCE_FILES = set('''
 requirements-sat.txt PROVENANCE.json analysis/__init__.py analysis/replay.py
 analysis/statistics.py analysis/check_package.py figures/plot_experiments_v3.py
 figures/plot_main_evidence_v3.py figures/results_map.py sat/__init__.py
+figures/plot_a1a2_main_v3.py figures/plot_main_evidence_b1_b4_v3.py
 sat/sat_hardness.py tests/__init__.py tests/test_replay.py tests/test_package.py
 tests/test_sat.py data/observations/a1.jsonl data/observations/a2.jsonl
 data/observations/a3.jsonl
@@ -31,8 +32,11 @@ metadata/model_construction.json metadata/experiment_definitions.json
 models/__init__.py models/loading.py models/lora_sft.py requirements-models.txt
 tests/test_model_construction.py tests/test_model_reference.py
 '''.split()) | {'data/evidence_v3/'+s+'.json' for s in SNAPSHOTS}
-FIGURES = {'figures/'+s+'.pdf' for s in ('a1a2_censoring_v3','b1_nested_budget_v3',
-           'b2_tracks_v3','main_evidence_v3','results_map')}
+CURRENT_FIGURES = {'figures/'+s+'.pdf' for s in
+                   ('results_map','a1a2_main_v3','main_evidence_b1_b4_v3')}
+LEGACY_FIGURES = {'figures/'+s+'.pdf' for s in
+                  ('a1a2_censoring_v3','b1_nested_budget_v3','b2_tracks_v3','main_evidence_v3')}
+FIGURES = CURRENT_FIGURES | LEGACY_FIGURES
 IGNORED_ROOTS = {'.git','.venv','.pytest_cache','.mpl-cache'}
 STD = {'argparse','ast','collections','copy','fractions','hashlib','itertools',
        'json','math','multiprocessing','os','pathlib','random','re','statistics','sys',
@@ -133,6 +137,8 @@ def check_package(root=ROOT, require_figures=False):
     require(len(entries)==len({e['path'] for e in entries}),'duplicate manifest bindings')
     bound = {e['path'] for e in entries}
     require(bound==SOURCE_FILES-{'PROVENANCE.json'},'manifest source inventory mismatch')
+    require(len(manifest['generated_figures'])==len({e['path'] for e in manifest['generated_figures']}),
+            'duplicate figure manifest bindings')
     for e in entries+manifest['generated_figures']:
         require(e['path'] in SOURCE_FILES|FIGURES,'manifest path outside package')
         path = root/e['path']
