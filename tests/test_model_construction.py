@@ -86,6 +86,30 @@ class ModelConstructionTests(unittest.TestCase):
         self.assertNotIn('fillers',domain)
         self.assertNotIn('prompts',domain)
 
+    def test_b1_static_information_scope_is_not_an_execution_claim(self):
+        scope=self.experiments['experiments']['B1']['initialization_and_screening']
+        self.assertEqual(scope['basis'],'static_inspection_of_recorded_runner_version')
+        self.assertIs(scope['original_campaign_execution_independently_reverified'],False)
+        self.assertEqual(scope['seed_template_family'],'clean')
+        self.assertIs(scope['seed_text_interpolates_secret'],False)
+        self.assertIs(scope['secret_supplied_to_mutation_or_crossover'],False)
+        self.assertEqual(set(scope['secret_used_for']),
+                         {'seed_manifest_admission_checks','leakage_adjudication','fitness'})
+        self.assertIs(scope['frozen_seed_rows_screened'],True)
+        self.assertIs(scope['mutation_filled_initial_candidates_rescreened'],False)
+        self.assertIs(scope['later_generated_candidates_rescreened'],False)
+        self.assertIs(scope['literal_templates_or_operational_implementation_included'],False)
+
+    def test_matched_analysis_is_label_only(self):
+        scope=self.experiments['matched_record_analysis']
+        self.assertEqual(scope['reported_roster_size'],66)
+        self.assertEqual(scope['reported_eligible_pairs'],30)
+        self.assertIs(scope['post_hoc'],True)
+        self.assertIs(scope['record_labels_only'],True)
+        self.assertIs(scope['source_identity_eligibility_independently_reverified'],False)
+        self.assertIs(scope['same_executable_established'],False)
+        self.assertIs(scope['new_generation_or_adjudication'],False)
+
     def test_fresh_joint_sft_is_not_sequential_training(self):
         block=self.model['current_training_behavior']
         self.assertIs(block['base_reset_each_level'],True)

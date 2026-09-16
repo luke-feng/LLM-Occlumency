@@ -2367,8 +2367,8 @@
     },
     {
       "path": "metadata/experiment_definitions.json",
-      "sha256": "5607a6b1821cf7839449b9c847779f0deaa37a8fa2a173b2ca9bba3f83898dc1",
-      "bytes": 8984,
+      "sha256": "7932b1218ce2ac4f531a795f97efde603841d9fa73a83a5b6900787c42c89d1e",
+      "bytes": 10763,
       "sources": [
         {
           "role": "reported_experimental_protocol",
@@ -2401,6 +2401,71 @@
             "all literal grammar/fillers and enumeration/exposure-filter implementation"
           ],
           "transformation": "Static description of factor ordering, normalization deduplication and completeness checks; no generating or filtering code is transferred."
+        },
+        {
+          "role": "b1_runner_static_initialization",
+          "original_sha256": "68ed583f9f7822a528c0e5b9ce84efdbd2a27d682e9b54cb064934e1da52c1ce",
+          "original_bytes": 84548,
+          "omitted_fields": [
+            "literal_templates",
+            "secret_values",
+            "operational_code",
+            "private_paths",
+            "private_execution_identifiers"
+          ],
+          "transformation": "Static descriptive projection of initialization, secret data flow and the boundary between frozen-seed checks and unrescreened generated candidates. Neither the source payload nor a runnable search recipe is included. Completed historical execution invocations were not independently reverified during this packaging."
+        },
+        {
+          "role": "b1_seed_construction_and_admission",
+          "original_sha256": "ae3ecf15906ddd0274f523f314180054e891080d4879c77b94c3c81956b49219",
+          "original_bytes": 50480,
+          "omitted_fields": [
+            "literal_templates",
+            "secret_values",
+            "operational_code",
+            "private_paths",
+            "private_execution_identifiers"
+          ],
+          "transformation": "Static descriptive projection of initialization, secret data flow and the boundary between frozen-seed checks and unrescreened generated candidates. Neither the source payload nor a runnable search recipe is included. Completed historical execution invocations were not independently reverified during this packaging."
+        },
+        {
+          "role": "b1_nested_candidate_stage_scope",
+          "original_sha256": "9fb8afa78ae71f647ffb7a03564152996bce929c7b6addb69cb418a1286ca8e3",
+          "original_bytes": 11494,
+          "omitted_fields": [
+            "literal_templates",
+            "secret_values",
+            "operational_code",
+            "private_paths",
+            "private_execution_identifiers"
+          ],
+          "transformation": "Static descriptive projection of initialization, secret data flow and the boundary between frozen-seed checks and unrescreened generated candidates. Neither the source payload nor a runnable search recipe is included. Completed historical execution invocations were not independently reverified during this packaging."
+        },
+        {
+          "role": "b1_shared_candidate_operator_scope",
+          "original_sha256": "02cfab6a189cc889c2813f5341d193c670ddd4a5346a361a2b3f362008eba8c8",
+          "original_bytes": 4929,
+          "omitted_fields": [
+            "literal_templates",
+            "secret_values",
+            "operational_code",
+            "private_paths",
+            "private_execution_identifiers"
+          ],
+          "transformation": "Static descriptive projection of initialization, secret data flow and the boundary between frozen-seed checks and unrescreened generated candidates. Neither the source payload nor a runnable search recipe is included. Completed historical execution invocations were not independently reverified during this packaging."
+        },
+        {
+          "role": "b1_clean_seed_manifest_admission_status",
+          "original_sha256": "662e7d5ecfeccb3686e12c86046d2238aa65f46e28c4d5fdfa16db66eedacba9",
+          "original_bytes": 54849773,
+          "omitted_fields": [
+            "literal_templates",
+            "secret_values",
+            "operational_code",
+            "private_paths",
+            "private_execution_identifiers"
+          ],
+          "transformation": "Static descriptive projection of initialization, secret data flow and the boundary between frozen-seed checks and unrescreened generated candidates. Neither the source payload nor a runnable search recipe is included. Completed historical execution invocations were not independently reverified during this packaging."
         }
       ]
     },
@@ -2442,6 +2507,50 @@
             "private context and operational experiment-specific interfaces"
           ],
           "transformation": "Generic SFT on caller-supplied data only; no workload generation. Local-only loading, non-overwrite output, explicit device contract, same-read input hashes and zero-supervision rejection are documented adaptations."
+        }
+      ]
+    },
+    {
+      "path": "data/evidence_v3/b1b4_joint_analysis.json",
+      "bytes": 37628,
+      "sha256": "e3fde7614978d12550b612d0997570a483fdaab1602336af6d3bd53d078f6815",
+      "sources": [
+        {
+          "role": "frozen_b1b4_matched_record_analysis",
+          "original_sha256": "cb1d07863c69bbe1bc4b6cf01a296631f319763952261da71ae32623ce5cfc58",
+          "original_bytes": 77481,
+          "omitted_fields": [
+            "availability",
+            "diagnostics",
+            "provenance",
+            "identity_roster[].b1_run_id",
+            "identity_roster[].b1_run_record",
+            "identity_roster[].b4_run_id",
+            "identity_roster[].b4_run_record",
+            "identity_roster[].b4_domain_validation_receipt",
+            "identity_roster[].b4_domain_validation_sha256",
+            "identity_roster[].canary_file_sha256",
+            "identity_roster[].canary_identity_basis",
+            "validated_pairs[].b1_run_id",
+            "validated_pairs[].b4_run_id"
+          ],
+          "transformation": "Preserve all 66 scientific roster identities/admission/status rows, 30 paired endpoint labels, summary and six group tables exactly. Replace private run identifiers with links to existing public B1/B4 records using scientific tuples; absent records have null public links. Move the original schema to source_schema_version and add public scope fields. Eligibility remains source-reported, not independently reverified. No prompts, outputs, witness positions or operational code are included."
+        }
+      ]
+    },
+    {
+      "path": "figures/plot_main_evidence_b1_b4_focused.py",
+      "bytes": 8388,
+      "sha256": "4bd45e955803085494a197d3b0de646699aebdb77e05ac298673af3d97939f59",
+      "sources": [
+        {
+          "role": "focused_maintext_renderer",
+          "original_sha256": "302c68989351a62965f33d51ea7b84c917552d9502c9da182254caf6087bb3b8",
+          "original_bytes": 8018,
+          "omitted_fields": [
+            "original_snapshot_hash_constants"
+          ],
+          "transformation": "Preserve all plot mathematics, labels and layout. Bind public B1/B4 projection hashes and validate scalar witness_count without reconstructing omitted positions. No estimator is executed. Public output PDF is byte-identical to the supplied manuscript figure."
         }
       ]
     }
@@ -2493,275 +2602,305 @@
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "930d1b43fa083d55a7548b4d0c10fe041ffba5c5ed474d7b4121794c71c97283",
-      "bytes": 67
+      "bytes": 67,
+      "sha256": "930d1b43fa083d55a7548b4d0c10fe041ffba5c5ed474d7b4121794c71c97283"
     },
     {
       "path": "DATA_PROVENANCE.md",
-      "sha256": "04a015a96ecaede6ab717f3b209148cf16c7725d2a2b70182681ecf8c94c2d46",
-      "bytes": 10061
+      "bytes": 11472,
+      "sha256": "bb02eb34e17da300439f925b5fc019f3ad3c08b5cbfbab45a6425364af2f3682"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1083,
+      "sha256": "19f2eeb498ae39ca06558527b268c65b3a2c811964f3de650b717cd2d51debab"
     },
     {
       "path": "README.md",
-      "sha256": "a7d051a61ff6f33534483258109539320508776528f37879d72b877d5a35df27",
-      "bytes": 7004
+      "bytes": 9076,
+      "sha256": "1d6ddf419acd126970b5fc80931a0886bbf9e5cc320aecc2dab0d0efce99fbc8"
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "sha256": "4057e73568c951ec518eab594067afe249c7c08a54e4bfbd63b8e9a2f2d47f57",
-      "bytes": 11153
+      "bytes": 12686,
+      "sha256": "374fcb579311489665e4e1709c5714b4e80d30c711cab8111ec0b5afd980a3e5"
     },
     {
       "path": "analysis/__init__.py",
-      "sha256": "c7786e1a67b728f1987d8fce757a4122581b16129616b37a9d5cc35e28467fc4",
-      "bytes": 72
+      "bytes": 72,
+      "sha256": "c7786e1a67b728f1987d8fce757a4122581b16129616b37a9d5cc35e28467fc4"
     },
     {
       "path": "analysis/check_package.py",
-      "sha256": "07aea1d9ea909744b4804acf32e02c5830deef99066e00ff42e08d197f3470f4",
-      "bytes": 8493
+      "bytes": 8695,
+      "sha256": "77aa81f99b4cdfcb192b06625d02fe1b3f7896982709886a88080a01adb138f1"
+    },
+    {
+      "path": "analysis/joint.py",
+      "bytes": 14623,
+      "sha256": "6ae678d6c83f754961e8a4c3c9718af7130216c50c059e011def58f5d4faa42e"
     },
     {
       "path": "analysis/replay.py",
-      "sha256": "525aee48c23e13eda24af21236aafc577665a7ed849fc89ad8764d262b53380e",
-      "bytes": 20729
+      "bytes": 20787,
+      "sha256": "647d857ae505722dae76d04d13dbcf4e54aa56de826c7c28600bef69d647f3e7"
     },
     {
       "path": "analysis/statistics.py",
-      "sha256": "7a3fecc5c7b1ada1639bb35535f9c4c2960b73316105ce50b82f7b91fe2caa86",
-      "bytes": 10945
+      "bytes": 10945,
+      "sha256": "7a3fecc5c7b1ada1639bb35535f9c4c2960b73316105ce50b82f7b91fe2caa86"
     },
     {
       "path": "data/evidence_v3/a1_rows.json",
-      "sha256": "4d5ffe7519c4e739b96cc2cfd2886c4ebd070556ba33c4fc20b878a1323334bd",
-      "bytes": 17415
+      "bytes": 17415,
+      "sha256": "4d5ffe7519c4e739b96cc2cfd2886c4ebd070556ba33c4fc20b878a1323334bd"
     },
     {
       "path": "data/evidence_v3/a1a2_analysis.json",
-      "sha256": "67c679d2ae3f0cfe20dacf42ee5c8f71fd1ef7db3e1a32b99b102d2f4ed334b3",
-      "bytes": 11113
+      "bytes": 11113,
+      "sha256": "67c679d2ae3f0cfe20dacf42ee5c8f71fd1ef7db3e1a32b99b102d2f4ed334b3"
     },
     {
       "path": "data/evidence_v3/a2_rows.json",
-      "sha256": "1b2c19b033e48c6539c66d291e81841492b2e2f7376e30a42ca174f0e6a5ffb2",
-      "bytes": 17357
+      "bytes": 17357,
+      "sha256": "1b2c19b033e48c6539c66d291e81841492b2e2f7376e30a42ca174f0e6a5ffb2"
     },
     {
       "path": "data/evidence_v3/a3_sweep.json",
-      "sha256": "22ee3ee3ae574a44c9e7db7b513e694cc5264bfc0bb83ea03c77441c4640b077",
-      "bytes": 12059
+      "bytes": 12059,
+      "sha256": "22ee3ee3ae574a44c9e7db7b513e694cc5264bfc0bb83ea03c77441c4640b077"
     },
     {
       "path": "data/evidence_v3/a3_windows.json",
-      "sha256": "0794d06cefb75fc1d7dc18fe579e9826b8c5a6ac8254dbdf282e78b9536bdd6e",
-      "bytes": 7513
+      "bytes": 7513,
+      "sha256": "0794d06cefb75fc1d7dc18fe579e9826b8c5a6ac8254dbdf282e78b9536bdd6e"
     },
     {
       "path": "data/evidence_v3/b1_analysis.json",
-      "sha256": "fc8055490003b29d3cf5afc5a7869e3b1309e29d47010077ea81d61572dd1905",
-      "bytes": 135518
+      "bytes": 135518,
+      "sha256": "fc8055490003b29d3cf5afc5a7869e3b1309e29d47010077ea81d61572dd1905"
     },
     {
       "path": "data/evidence_v3/b1b2_decomposition.json",
-      "sha256": "606c935b76bdafab6bc0d38061f4c870481cb05e7ee1e00d3fa55ab4124e05cc",
-      "bytes": 19630
+      "bytes": 19630,
+      "sha256": "606c935b76bdafab6bc0d38061f4c870481cb05e7ee1e00d3fa55ab4124e05cc"
+    },
+    {
+      "path": "data/evidence_v3/b1b4_joint_analysis.json",
+      "bytes": 37628,
+      "sha256": "e3fde7614978d12550b612d0997570a483fdaab1602336af6d3bd53d078f6815"
     },
     {
       "path": "data/evidence_v3/b2_analysis.json",
-      "sha256": "f84d58f91f208459661ab6c328f96932e9d8c30f4e55ca2556cb8e74d5d68f16",
-      "bytes": 51332
+      "bytes": 51332,
+      "sha256": "f84d58f91f208459661ab6c328f96932e9d8c30f4e55ca2556cb8e74d5d68f16"
     },
     {
       "path": "data/evidence_v3/b3_analysis.json",
-      "sha256": "40c16b9b5fa8b270dc8138f03ded75b30f9d2eca08a4ce1604299c290791bb00",
-      "bytes": 145127
+      "bytes": 145127,
+      "sha256": "40c16b9b5fa8b270dc8138f03ded75b30f9d2eca08a4ce1604299c290791bb00"
     },
     {
       "path": "data/evidence_v3/b4_analysis.json",
-      "sha256": "6f83bb9d3f8b0aedaf71fe26d41b2c2cfd665faacc24fa43658a24b0ff3ad1a3",
-      "bytes": 16484
+      "bytes": 16484,
+      "sha256": "6f83bb9d3f8b0aedaf71fe26d41b2c2cfd665faacc24fa43658a24b0ff3ad1a3"
     },
     {
       "path": "data/evidence_v3/b4_coverage.json",
-      "sha256": "3895a5b11563d9709dbc493dde9161b16363f4f9d458e1cf46cbeb986e9627f6",
-      "bytes": 80658
+      "bytes": 80658,
+      "sha256": "3895a5b11563d9709dbc493dde9161b16363f4f9d458e1cf46cbeb986e9627f6"
     },
     {
       "path": "data/evidence_v3/historical_controls.json",
-      "sha256": "9d6412f759c3f0427a46e04891de0599a1d706fbe4239ffa041e52dd80eff585",
-      "bytes": 2702
+      "bytes": 2702,
+      "sha256": "9d6412f759c3f0427a46e04891de0599a1d706fbe4239ffa041e52dd80eff585"
     },
     {
       "path": "data/evidence_v3/utility_d3.json",
-      "sha256": "aa054b0fd8443e519fe5f0fb862c649917df75be0b54e72a4276d3ed053a7299",
-      "bytes": 27071
+      "bytes": 27071,
+      "sha256": "aa054b0fd8443e519fe5f0fb862c649917df75be0b54e72a4276d3ed053a7299"
     },
     {
       "path": "data/observations/a1.jsonl",
-      "sha256": "138e6af55ba05a7e00aea1be1787471400bd9fede15451c4e025ef0228dfeefa",
-      "bytes": 88256
+      "bytes": 88256,
+      "sha256": "138e6af55ba05a7e00aea1be1787471400bd9fede15451c4e025ef0228dfeefa"
     },
     {
       "path": "data/observations/a2.jsonl",
-      "sha256": "38c1f29b73c7c91a1d08ff51d870b6ad4c91683fc08dbfa82be03cee739a189d",
-      "bytes": 88308
+      "bytes": 88308,
+      "sha256": "38c1f29b73c7c91a1d08ff51d870b6ad4c91683fc08dbfa82be03cee739a189d"
     },
     {
       "path": "data/observations/a3.jsonl",
-      "sha256": "7fd75df84f7f492401d25a0e9a3884a8583b882120eb944bf88a45e6f3f29746",
-      "bytes": 1284839
+      "bytes": 1284839,
+      "sha256": "7fd75df84f7f492401d25a0e9a3884a8583b882120eb944bf88a45e6f3f29746"
     },
     {
       "path": "docs/EXPERIMENT_DEFINITIONS.md",
-      "sha256": "333da2ffede694935644edc5b7070099313934abc199892bc5020d66d14e3f99",
-      "bytes": 10576
+      "bytes": 12828,
+      "sha256": "9871614495de9f203aa724724c9485a670a7a72bf08095a09db4ba4be3f5b9fc"
     },
     {
       "path": "docs/MODEL_CONSTRUCTION.md",
-      "sha256": "18a6a98b101a07835e8c906938e663e81ae0ca509770e28cb883bb35e6c3dbba",
-      "bytes": 9269
+      "bytes": 9269,
+      "sha256": "18a6a98b101a07835e8c906938e663e81ae0ca509770e28cb883bb35e6c3dbba"
     },
     {
       "path": "figures/plot_a1a2_main_v3.py",
-      "sha256": "efa6b8465e6945178da465c7699514713cbebe7eb7e16166ec53ab500b32e65d",
-      "bytes": 5814
+      "bytes": 5814,
+      "sha256": "efa6b8465e6945178da465c7699514713cbebe7eb7e16166ec53ab500b32e65d"
     },
     {
       "path": "figures/plot_experiments_v3.py",
-      "sha256": "6cf69a54dc43cc7a929440732d1d1f09bd8a1c8406878a0e06a1ddb91b3441bd",
-      "bytes": 11709
+      "bytes": 11709,
+      "sha256": "6cf69a54dc43cc7a929440732d1d1f09bd8a1c8406878a0e06a1ddb91b3441bd"
+    },
+    {
+      "path": "figures/plot_main_evidence_b1_b4_focused.py",
+      "bytes": 8388,
+      "sha256": "4bd45e955803085494a197d3b0de646699aebdb77e05ac298673af3d97939f59"
     },
     {
       "path": "figures/plot_main_evidence_b1_b4_v3.py",
-      "sha256": "3c019438e03aafc08db32eb28c0364706db25c75dec35fc4ec6f5a8cf744cfba",
-      "bytes": 10940
+      "bytes": 10940,
+      "sha256": "3c019438e03aafc08db32eb28c0364706db25c75dec35fc4ec6f5a8cf744cfba"
     },
     {
       "path": "figures/plot_main_evidence_v3.py",
-      "sha256": "2cb8c0b6f0161488e53544ae87dc6aa9443571b2a710ff00dd8265ece73d72f2",
-      "bytes": 9256
+      "bytes": 9256,
+      "sha256": "2cb8c0b6f0161488e53544ae87dc6aa9443571b2a710ff00dd8265ece73d72f2"
     },
     {
       "path": "figures/results_map.py",
-      "sha256": "0e0bb7431b3159ae42f7e735326afc7b03bc0c839a7263a48dbef2fae1a173d7",
-      "bytes": 5250
+      "bytes": 5250,
+      "sha256": "0e0bb7431b3159ae42f7e735326afc7b03bc0c839a7263a48dbef2fae1a173d7"
     },
     {
       "path": "metadata/experiment_definitions.json",
-      "sha256": "5607a6b1821cf7839449b9c847779f0deaa37a8fa2a173b2ca9bba3f83898dc1",
-      "bytes": 8984
+      "bytes": 10763,
+      "sha256": "7932b1218ce2ac4f531a795f97efde603841d9fa73a83a5b6900787c42c89d1e"
     },
     {
       "path": "metadata/model_construction.json",
-      "sha256": "908f27143696294eafa29b5e950efe298b8f09fc85475d3bca24fd45ade0dd58",
-      "bytes": 96602
+      "bytes": 96602,
+      "sha256": "908f27143696294eafa29b5e950efe298b8f09fc85475d3bca24fd45ade0dd58"
     },
     {
       "path": "models/__init__.py",
-      "sha256": "7d870e06b554b91bc4544128316433e99f30a4b323ae54e59bf68bb5bad0c996",
-      "bytes": 84
+      "bytes": 84,
+      "sha256": "7d870e06b554b91bc4544128316433e99f30a4b323ae54e59bf68bb5bad0c996"
     },
     {
       "path": "models/loading.py",
-      "sha256": "caecf08470b9fb4190b82019c720b206dc82fffecf006a0b4ddb99cec68dbe11",
-      "bytes": 5042
+      "bytes": 5042,
+      "sha256": "caecf08470b9fb4190b82019c720b206dc82fffecf006a0b4ddb99cec68dbe11"
     },
     {
       "path": "models/lora_sft.py",
-      "sha256": "cbfd9f82051b1b52c8e638660058be1657a3dc58007ae3fe3d367269574ca279",
-      "bytes": 12614
+      "bytes": 12614,
+      "sha256": "cbfd9f82051b1b52c8e638660058be1657a3dc58007ae3fe3d367269574ca279"
     },
     {
       "path": "requirements-models.txt",
-      "sha256": "df963fb923c4c29e6a39c3a9eb9ff8ea91a8e59254c735f19e7bdca1b2a780f1",
-      "bytes": 548
+      "bytes": 548,
+      "sha256": "df963fb923c4c29e6a39c3a9eb9ff8ea91a8e59254c735f19e7bdca1b2a780f1"
     },
     {
       "path": "requirements-sat.txt",
-      "sha256": "8680637796c42a57dac187f08f1d59ae5c338754ff0b227c1136422113a88c96",
-      "bytes": 256
+      "bytes": 256,
+      "sha256": "8680637796c42a57dac187f08f1d59ae5c338754ff0b227c1136422113a88c96"
     },
     {
       "path": "requirements.txt",
-      "sha256": "d29f259f288e80a194e5ee0803a1ef1a45e59a59f4f4f3719dcd5d0e0933a1c0",
-      "bytes": 163
+      "bytes": 163,
+      "sha256": "d29f259f288e80a194e5ee0803a1ef1a45e59a59f4f4f3719dcd5d0e0933a1c0"
     },
     {
       "path": "sat/__init__.py",
-      "sha256": "078e9554c88ae63c8d2141a808beb62c1b8bcb6549680e99e97536a39bc3fdaf",
-      "bytes": 80
+      "bytes": 80,
+      "sha256": "078e9554c88ae63c8d2141a808beb62c1b8bcb6549680e99e97536a39bc3fdaf"
     },
     {
       "path": "sat/sat_hardness.py",
-      "sha256": "c9e2bc7a0e7153d8a68b866d87e6c6ce5bbdf1ad11f200e9e57d1d26cc2e0cef",
-      "bytes": 13965
+      "bytes": 13965,
+      "sha256": "c9e2bc7a0e7153d8a68b866d87e6c6ce5bbdf1ad11f200e9e57d1d26cc2e0cef"
     },
     {
       "path": "tests/__init__.py",
-      "sha256": "9ff9cb129cd12fcd9a3f2eafb9ff1412b2038ee4367f0500def197b35ee5096b",
-      "bytes": 77
+      "bytes": 77,
+      "sha256": "9ff9cb129cd12fcd9a3f2eafb9ff1412b2038ee4367f0500def197b35ee5096b"
+    },
+    {
+      "path": "tests/test_joint.py",
+      "bytes": 8500,
+      "sha256": "837d3aa99117f27f9673d4f2b5f7c9793a71343509af9ae50b144313a5df1440"
     },
     {
       "path": "tests/test_model_construction.py",
-      "sha256": "63b192dc423a330b9462a33c9bcdb805c66e13d6191bd543885beb656dd1b9cd",
-      "bytes": 5098
+      "bytes": 6674,
+      "sha256": "342492aee902f9a8b55e8e235398b6ddf0570f6be97c0c739c1e1ae23e1c4f87"
     },
     {
       "path": "tests/test_model_reference.py",
-      "sha256": "975572109af18ab92334cc3dec7f2d3edda2b5c4ae61fcce36d9fbf6a8296840",
-      "bytes": 7350
+      "bytes": 7350,
+      "sha256": "975572109af18ab92334cc3dec7f2d3edda2b5c4ae61fcce36d9fbf6a8296840"
     },
     {
       "path": "tests/test_package.py",
-      "sha256": "6cdf3196cddc48061f253d41619795543fffea5046537621336a74351f4e72e0",
-      "bytes": 5940
+      "bytes": 6637,
+      "sha256": "a3cc5f37825731f948ea6bb63c223f82b75903bd4a1cb2b83716a5add651ba96"
     },
     {
       "path": "tests/test_replay.py",
-      "sha256": "4d5d09f24dce60f8019fee8f04d6150cbcf3a438cb892c079c283f66fb097a88",
-      "bytes": 5645
+      "bytes": 5645,
+      "sha256": "4d5d09f24dce60f8019fee8f04d6150cbcf3a438cb892c079c283f66fb097a88"
     },
     {
       "path": "tests/test_sat.py",
-      "sha256": "09ea31d8c32a6c97c154c344e6919449ba421521e3fd4f54a81b84690f94f9b8",
-      "bytes": 1571
+      "bytes": 1571,
+      "sha256": "09ea31d8c32a6c97c154c344e6919449ba421521e3fd4f54a81b84690f94f9b8"
     }
   ],
   "generated_figures": [
     {
       "path": "figures/a1a2_censoring_v3.pdf",
-      "sha256": "196268ea3d3145671f06e58f49337a3eea3a64fbafec9f8db8517c92cf370f73",
-      "bytes": 25921
+      "bytes": 25921,
+      "sha256": "196268ea3d3145671f06e58f49337a3eea3a64fbafec9f8db8517c92cf370f73"
     },
     {
       "path": "figures/a1a2_main_v3.pdf",
-      "sha256": "b3f1b7bced7f8e2d1d9e0b839811b4703bd745d609a83574b12d984431a9dec6",
-      "bytes": 25722
+      "bytes": 25722,
+      "sha256": "b3f1b7bced7f8e2d1d9e0b839811b4703bd745d609a83574b12d984431a9dec6"
     },
     {
       "path": "figures/b1_nested_budget_v3.pdf",
-      "sha256": "ff04da8c1bb388d216d8f3650bf2c1c4df5d971cf03ba6249b90a6965e0cc367",
-      "bytes": 11028
+      "bytes": 11028,
+      "sha256": "ff04da8c1bb388d216d8f3650bf2c1c4df5d971cf03ba6249b90a6965e0cc367"
     },
     {
       "path": "figures/b2_tracks_v3.pdf",
-      "sha256": "62151ef1b81f06e85a1d62e53401b5b9abad4acb8aa7113a8b443870d26312e5",
-      "bytes": 22876
+      "bytes": 22876,
+      "sha256": "62151ef1b81f06e85a1d62e53401b5b9abad4acb8aa7113a8b443870d26312e5"
+    },
+    {
+      "path": "figures/main_evidence_b1_b4_focused.pdf",
+      "bytes": 28033,
+      "sha256": "bde2560f90d29f7b80415b3c9aed81e857265f93b792daf35705bebc4397218f"
     },
     {
       "path": "figures/main_evidence_b1_b4_v3.pdf",
-      "sha256": "d9273ad0102ab9b4bf82c46899bbaf297aac2b46aa300e950017a4ed72011f84",
-      "bytes": 26272
+      "bytes": 26272,
+      "sha256": "d9273ad0102ab9b4bf82c46899bbaf297aac2b46aa300e950017a4ed72011f84"
     },
     {
       "path": "figures/main_evidence_v3.pdf",
-      "sha256": "46266e1d8a219b4bc65a03515f96f7daec0de9ba5aee88c213b4046040c919b8",
-      "bytes": 39237
+      "bytes": 39237,
+      "sha256": "46266e1d8a219b4bc65a03515f96f7daec0de9ba5aee88c213b4046040c919b8"
     },
     {
       "path": "figures/results_map.pdf",
-      "sha256": "eef5d79bb6661785c491ba4c184f82a66d61c70ddff630fd6951dad1d71ba41c",
-      "bytes": 42986
+      "bytes": 42986,
+      "sha256": "eef5d79bb6661785c491ba4c184f82a66d61c70ddff630fd6951dad1d71ba41c"
     }
   ],
   "self_binding": "PROVENANCE.json is the manifest trust anchor; it does not contain a circular hash of itself.",
@@ -2789,7 +2928,8 @@
     "descriptive_metadata_unchanged": true,
     "previous_upstream_source_bindings_retained": true,
     "new_estimation_executed": false,
-    "model_or_solver_execution": false
+    "model_or_solver_execution": false,
+    "historical_revision": true
   },
   "supplement_scope": {
     "new_files": [
@@ -2817,5 +2957,38 @@
     "training_executed": false,
     "inference_executed": false,
     "literal_workload_included": false
+  },
+  "maintext_sync_scope": {
+    "main_figures": [
+      "figures/results_map.pdf",
+      "figures/main_evidence_b1_b4_focused.pdf"
+    ],
+    "supplementary_legacy_figures": [
+      "figures/a1a2_censoring_v3.pdf",
+      "figures/a1a2_main_v3.pdf",
+      "figures/b1_nested_budget_v3.pdf",
+      "figures/b2_tracks_v3.pdf",
+      "figures/main_evidence_b1_b4_v3.pdf",
+      "figures/main_evidence_v3.pdf"
+    ],
+    "new_files": [
+      "LICENSE",
+      "analysis/joint.py",
+      "data/evidence_v3/b1b4_joint_analysis.json",
+      "figures/plot_main_evidence_b1_b4_focused.py",
+      "figures/main_evidence_b1_b4_focused.pdf",
+      "tests/test_joint.py"
+    ],
+    "paired_tables": "Table 1 and Appendix Table 16 from reported labels and source-reported eligibility",
+    "prior_numerical_data_unchanged": true,
+    "prior_figure_bytes_unchanged": true,
+    "statistical_algorithms_unchanged": true,
+    "model_sat_implementations_unchanged": true,
+    "descriptive_experiment_metadata_updated": true,
+    "original_campaign_execution_reverified": false,
+    "new_estimation": false,
+    "model_or_solver_execution": false,
+    "code_license": "MIT",
+    "data_and_model_weights_covered_by_software_license": false
   }
 }

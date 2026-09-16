@@ -17,13 +17,14 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 SNAPSHOTS = ('a1_rows','a2_rows','a1a2_analysis','a3_sweep','a3_windows',
              'b1_analysis','b2_analysis','b3_analysis','b4_analysis','b4_coverage',
-             'b1b2_decomposition','historical_controls','utility_d3')
+             'b1b2_decomposition','b1b4_joint_analysis','historical_controls','utility_d3')
 SOURCE_FILES = set('''
-.gitignore README.md REPRODUCIBILITY.md DATA_PROVENANCE.md requirements.txt
+.gitignore LICENSE README.md REPRODUCIBILITY.md DATA_PROVENANCE.md requirements.txt
 requirements-sat.txt PROVENANCE.json analysis/__init__.py analysis/replay.py
-analysis/statistics.py analysis/check_package.py figures/plot_experiments_v3.py
+analysis/statistics.py analysis/check_package.py analysis/joint.py figures/plot_experiments_v3.py
 figures/plot_main_evidence_v3.py figures/results_map.py sat/__init__.py
 figures/plot_a1a2_main_v3.py figures/plot_main_evidence_b1_b4_v3.py
+figures/plot_main_evidence_b1_b4_focused.py tests/test_joint.py
 sat/sat_hardness.py tests/__init__.py tests/test_replay.py tests/test_package.py
 tests/test_sat.py data/observations/a1.jsonl data/observations/a2.jsonl
 data/observations/a3.jsonl
@@ -33,9 +34,10 @@ models/__init__.py models/loading.py models/lora_sft.py requirements-models.txt
 tests/test_model_construction.py tests/test_model_reference.py
 '''.split()) | {'data/evidence_v3/'+s+'.json' for s in SNAPSHOTS}
 CURRENT_FIGURES = {'figures/'+s+'.pdf' for s in
-                   ('results_map','a1a2_main_v3','main_evidence_b1_b4_v3')}
+                   ('results_map','main_evidence_b1_b4_focused')}
 LEGACY_FIGURES = {'figures/'+s+'.pdf' for s in
-                  ('a1a2_censoring_v3','b1_nested_budget_v3','b2_tracks_v3','main_evidence_v3')}
+                  ('a1a2_censoring_v3','a1a2_main_v3','b1_nested_budget_v3',
+                   'b2_tracks_v3','main_evidence_v3','main_evidence_b1_b4_v3')}
 FIGURES = CURRENT_FIGURES | LEGACY_FIGURES
 IGNORED_ROOTS = {'.git','.venv','.pytest_cache','.mpl-cache'}
 STD = {'argparse','ast','collections','copy','fractions','hashlib','itertools',
@@ -110,7 +112,7 @@ def check_imports(source, relative):
             modules = []
         for module in modules:
             base = module.split('.')[0]
-            permitted = base in STD or module in {'analysis','analysis.check_package','analysis.statistics','analysis.replay','sat','sat.sat_hardness','models','models.loading','models.lora_sft'}
+            permitted = base in STD or module in {'analysis','analysis.check_package','analysis.statistics','analysis.replay','analysis.joint','sat','sat.sat_hardness','models','models.loading','models.lora_sft'}
             permitted |= base=='matplotlib' and relative.startswith('figures/')
             permitted |= module=='pysat.solvers' and relative=='sat/sat_hardness.py'
             if base in {'torch','transformers','peft'} and relative in {'models/loading.py','models/lora_sft.py'}:
@@ -157,7 +159,7 @@ def check_package(root=ROOT, require_figures=False):
         path = root/relative
         if path.suffix=='.py':
             check_imports(path.read_text(),relative)
-        if path.suffix in {'.py','.md','.json','.jsonl','.txt'}:
+        if path.suffix in {'.py','.md','.json','.jsonl','.txt'} or relative=='LICENSE':
             content = path.read_text(encoding='utf-8')
             require(not re.search(r'/(?:Users|Volumes|home|root)/|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}',content),
                     'private path or email in '+relative)

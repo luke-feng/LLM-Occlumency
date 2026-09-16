@@ -2,7 +2,7 @@
 
 This is adapted mathematical replay from public numerical projections. It does not import the original analysis packages, which depend on excluded operational runners. Accepted numerical values are never overwritten. The script prints checks to stdout and exits nonzero on mismatch.
 
-The optional model-construction supplement is separate from this mathematical replay. See `docs/MODEL_CONSTRUCTION.md` and `docs/EXPERIMENT_DEFINITIONS.md`: all 98 historical state metadata records are retained, but missing actual training hyperparameters remain null. Generic local SFT/loading utilities do not recreate original weights, supply original training data, or execute the defined audit campaigns. That supplement preserved the preceding numerical and figure payload. The current figure refresh adds two main-text layouts and updates the result map without changing numerical datasets, statistical modules or model-construction metadata.
+The optional model-construction supplement is separate from this mathematical replay. See `docs/MODEL_CONSTRUCTION.md` and `docs/EXPERIMENT_DEFINITIONS.md`: all 98 historical state metadata records are retained, but missing actual training hyperparameters remain null. Generic local SFT/loading utilities do not recreate original weights, supply original training data, or execute the defined audit campaigns. The current main-text synchronization adds the focused B1/B4 figure and a separately published projection of the frozen B1/B4 matched records. Existing numerical datasets, statistical algorithms, model-construction metadata and previous figure bytes remain unchanged.
 
 ## A1/A2
 
@@ -24,7 +24,7 @@ The current B1-B3 presentation calls the stored percentile endpoints "95% bootst
 
 Binary indicators, admission flags, canary ordinal labels, run ordering, precision-qualified tracks, SFT seeds and fixed levels are retained. Canary ordinal labels are not secret strings. Both datasets contain 456 executed but 423 admitted observations; the inner denominator is each run's own seven or eight admitted observations. These are not 423 independent secrets.
 
-B1 takes unweighted run means across 57 runs. Its five found-nothing points correspond to budgets 16/32/64/128/256 and use 1 minus cumulative recovery. The paired endpoint contrast resamples 57 runs with replacement, sharing the selected runs between endpoints: 2,000 replicates, seed 20260903, sorted indices 49/1949. Only the endpoint contrast has a published bootstrap range, not every curve point. Monotonicity is built into cumulative indicators, not an independent empirical finding. Track decomposition uses exact within-track run means and n_track/57 recovery weights; it does not introduce a new track-equal B1 primary.
+B1 takes unweighted run means across 57 runs. Its five mean unrecovered-canary fractions correspond to budgets 16/32/64/128/256 and use 1 minus cumulative recovery. The paired endpoint contrast resamples 57 runs with replacement, sharing the selected runs between endpoints: 2,000 replicates, seed 20260903, sorted indices 49/1949. Only the endpoint contrast has a published bootstrap range, not every curve point. Monotonicity is built into cumulative indicators, not an independent empirical finding. Track decomposition uses exact within-track run means and n_track/57 recovery weights; it does not introduce a new track-equal B1 primary.
 
 B3 averages admitted canaries within run, SFT seeds within track-level, fixed levels within track, and tracks equally. Its 2,000 hierarchical draws use seed 20260910, resampling tracks, runs within fixed levels, and canaries within drawn runs. All four budgets 16/32/64/128 share a draw's indices. Levels and the single search seed are not resampled. Track/run/canary traversal ordering is retained, with percentile indices 49/1949. The dataset reports an informed audit; these numerical indicators do not establish unknown-secret extraction or generalization across new search seeds. B3 shares model states with other studies, not an independent model-cohort replication.
 
@@ -44,6 +44,14 @@ For each recorded UNSAFE cell, exact coverage is C(N-w,B)/C(N,B): the probabilit
 
 This is arithmetic over a fixed record, not new generation, output invariance under rebatching, a new confidence interval, a comparison with B1, or an independent replication.
 
+## B1/B4 matched records
+
+`data/evidence_v3/b1b4_joint_analysis.json` retains the reported 66-target identity roster and 30 eligible pairs. Eligibility and the exclusions are supplied by the frozen identity analysis, not inferred from recovery or independently reverified here. Private run/source-file identifiers are replaced by links to the existing public B1 runs and B4 cells, using track, SFT seed, refusal level and canary ordinal. The roster retains the reported one-sided targets and original B1 exclusions.
+
+`python analysis/joint.py` validates available B1 16/256-call indicators and B4 labels against the public snapshots, then reconstructs the stored 2-by-3/2-by-2 counts, six model-state groups, and canary-ID rows of Tables 1 and 16. `python analysis/replay.py --only b1b4` runs the same numerical checks. Twenty-five matched targets are B4-UNSAFE, with B1 bins 6 by 16 calls, 9 first in calls 17-256, and 10 unrecovered by 256. All ten are Qwen3-32B targets. The five B4-SAFE pairs have no B1 recovery by 256.
+
+The comparison is post hoc, label-only and descriptive. Its prompt domains and execution protocols differ. No interval, new matching rule, in-domain false-negative rate or budget-only effect is estimated. The supplied source-identity eligibility is not a fresh audit of model weights, original files or execution equivalence. No prompts, secret values, witness positions, outputs or private source paths are included.
+
 ## Historical controls
 
 The E3 detector summary describes the separate 26,854-output no-PAIR corpus: 11,400 flags, 6,426 gold positives, 4,974 wrong flags, precision 0.5636842105263158 and recorded recall one. The script checks this count arithmetic. It does not rerun the detector, six judges or original alignment of output IDs. The per-track range is a stored summary. The full six-judge figure is not reproduced.
@@ -56,7 +64,7 @@ Named held-out benign examples retain 64/64 and 52/52 lexical refusals; those co
 
 ## Verification limits
 
-The current empirical figure renderers check public input hashes, frozen budget grids and available/paired endpoints before plotting. The B4 panel also requires 64 completed cells, eight distinct canaries per model/state, witness-count/decision agreement and the exact base/adapted totals. The A1/A2 renderer retains the twelve-cell check, R1/R2 interval gates and deterministic-singleton omission of sampling bars. No figure renderer runs an estimator, model or solver.
+The main-text focused renderer and retained supplementary renderers check public input hashes, frozen budget grids and available/paired endpoints before plotting. The B4 panel also requires 64 completed cells, eight distinct canaries per model/state, witness-count/decision agreement and the exact base/adapted totals. The now-supplementary A1/A2 renderer retains the twelve-cell check, R1/R2 interval gates and deterministic-singleton omission of sampling bars. No figure renderer runs an estimator, model or solver.
 
 Core Python is standard-library-only, including tiny truth-table SAT tests. Plotting uses Matplotlib and does not depend on the SAT wrapper. No network or GPU access is required for replay after obtaining the package; dependency installation is a separate optional action.
 

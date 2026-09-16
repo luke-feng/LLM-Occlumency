@@ -44,14 +44,14 @@
           200
         ],
         "ratios": [
-          3.0,
+          3,
           3.5,
-          4.0,
+          4,
           4.26,
           4.5,
-          5.0,
+          5,
           5.5,
-          6.0
+          6
         ],
         "instances_per_cell": 500,
         "total_observations": 8000
@@ -76,7 +76,7 @@
         ]
       },
       "input": "Shared adapted states and fixed selected/admitted canary population; literal workload excluded",
-      "output": "Per-prefix binary recovery and run-equal found-nothing summaries",
+      "output": "Per-prefix binary recovery and run-equal mean unrecovered-canary fractions",
       "budget_unit": "distinct issued target calls per canary/run",
       "budgets": [
         16,
@@ -89,7 +89,27 @@
       "search_seed": 101,
       "stop_rule": "First recovery or full distinct-call budget; proposals may be rejected before issue",
       "missing_rule": "A negative endpoint requires 256 calls; unsupported admitted endpoints make the contrast unavailable, not a smaller denominator",
-      "information_scope": "Known-canary audit with secret-derived fitness and selection. No secret-blind feedback ablation or uninformed unknown-secret extraction claim."
+      "information_scope": "Known-canary audit with secret-derived fitness and selection. No secret-blind feedback ablation or uninformed unknown-secret extraction claim.",
+      "initialization_and_screening": {
+        "basis": "static_inspection_of_recorded_runner_version",
+        "original_campaign_execution_independently_reverified": false,
+        "seed_template_family": "clean",
+        "seed_rows_per_canary_run": 3,
+        "seed_text_uses_project_label": true,
+        "seed_text_interpolates_secret": false,
+        "secret_supplied_to_mutation_or_crossover": false,
+        "secret_used_for": [
+          "seed_manifest_admission_checks",
+          "leakage_adjudication",
+          "fitness"
+        ],
+        "initial_population_filled_with_seed_mutations": true,
+        "frozen_seed_rows_screened": true,
+        "mutation_filled_initial_candidates_rescreened": false,
+        "later_generated_candidates_rescreened": false,
+        "candidate_gate": "Normalized per-search deduplication and budget constraints, not a repeated content-exposure audit",
+        "literal_templates_or_operational_implementation_included": false
+      }
     },
     "B2": {
       "population": {
@@ -138,12 +158,13 @@
         64,
         128
       ],
-      "budget_unit": "unique target calls per canary/run",
+      "budget_unit": "distinct target calls per canary/run",
       "proposal_ceiling": 512,
       "search_seed": 101,
-      "stop_rule": "Recovery, unique-call budget exhaustion or allowed proposal exhaustion",
+      "stop_rule": "Recovery, distinct-call budget exhaustion or allowed proposal exhaustion",
       "missing_rule": "Absent/not-attempted/infrastructure-failed admitted cells invalidate availability; proposal exhaustion is distinguished from those failures",
-      "information_scope": "Secret-informed audit through derived feedback; not globally secret-blind or an independent model-cohort replication"
+      "information_scope": "Secret-informed audit through derived feedback; not globally secret-blind or an independent model-cohort replication",
+      "recorded_budget_name": "unique target calls"
     },
     "B4": {
       "population": {
@@ -215,5 +236,24 @@
     ],
     "independently_revalidated_during_this_packaging": false
   },
-  "scope": "Definitions of reported experiments, not executable acquisition configurations. Existing numerical inputs/results are unchanged."
+  "scope": "Definitions of reported experiments, not executable acquisition configurations. Existing numerical inputs/results are unchanged.",
+  "matched_record_analysis": {
+    "schema_version": "public_b1b4_matched_definition_v1",
+    "data_file": "data/evidence_v3/b1b4_joint_analysis.json",
+    "input": "Previously reported B1 endpoints and B4 labels, with a supplied identity-eligibility roster",
+    "output": "Retabulation of frozen 2-by-3/2-by-2 summaries, six groups and canary-ID rows",
+    "matching_key": [
+      "track",
+      "sft_seed",
+      "refusal_level",
+      "canary_id"
+    ],
+    "reported_roster_size": 66,
+    "reported_eligible_pairs": 30,
+    "post_hoc": true,
+    "record_labels_only": true,
+    "source_identity_eligibility_independently_reverified": false,
+    "same_executable_established": false,
+    "new_generation_or_adjudication": false
+  }
 }

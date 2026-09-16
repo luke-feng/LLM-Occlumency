@@ -18,6 +18,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0,str(ROOT))
 from analysis import statistics as s
 from analysis.check_package import check_package, input_snapshot, json_text, require
+from analysis.joint import check_joint
 
 TRACKS = {'Qwen3-8B-bf16','Qwen3-8B-4bit','Qwen3-14B-bf16','Qwen3-14B-4bit',
           'Qwen3-32B-bf16','Qwen3-30B-A3B-bf16','Qwen3-235B-A22B-4bit',
@@ -310,7 +311,7 @@ def check_historical(root,bootstrap=False):
 
 
 CHECKS = {'a1a2':check_a1a2,'a3':check_a3,'b1':check_b1,'b2':check_b2,
-          'b3':check_b3,'b4':check_b4,'historical':check_historical}
+          'b3':check_b3,'b4':check_b4,'b1b4':check_joint,'historical':check_historical}
 
 
 def main():

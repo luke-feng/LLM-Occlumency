@@ -1,6 +1,6 @@
 # Reported experiment definitions
 
-`metadata/experiment_definitions.json` is a descriptive index, not a runnable campaign configuration. This document defines populations, input/output roles, budget units and missingness. It supplies no literal prompt family, finite-domain generator, feedback scorer or model-query workflow. The current main figures rearrange existing evidence; the numerical records and descriptive metadata are unchanged.
+`metadata/experiment_definitions.json` is a descriptive index, not a runnable campaign configuration. This document defines populations, input/output roles, budget units and missingness. It supplies no literal prompt family, finite-domain generator, feedback scorer or model-query workflow. The current main figures rearrange existing B1/B4 evidence. Existing campaign numerical records are unchanged; the package also supplies a projection and label-only replay of the already reported B1/B4 matched comparison.
 
 ## Shared distinctions
 
@@ -30,9 +30,11 @@ The quantity is the median log2(1+conflicts) at each ratio, followed by equal me
 
 ## B1: nested distinct-call audit
 
-The cohort comprises nine non-235B tracks at L2/L3/L4, 57 runs, eight selected canaries per run, 456 executed and 423 admitted observations. Inputs are reused adapted states and the frozen selected/admitted population; original workloads are not included. Outputs are cumulative binary recovery indicators at 16/32/64/128/256 distinct issued target calls per canary/run, then run-equal found-nothing summaries.
+The cohort comprises nine non-235B tracks at L2/L3/L4, 57 runs, eight selected canaries per run, 456 executed and 423 admitted observations. Inputs are reused adapted states and the frozen selected/admitted population; original workloads are not included. Outputs are cumulative binary recovery indicators at 16/32/64/128/256 distinct issued target calls per canary/run, then run-equal mean unrecovered-canary fractions. The stored `fnr` field name is retained.
 
 One trajectory supplies all prefixes; these are not separate reruns. Normalized duplicates are rejected before a distinct call counts. The reported proposal ceiling is 1,024 and the single search seed is 101. Recovery may stop a trajectory early. A negative endpoint requires reaching 256 distinct calls; an unsupported admitted endpoint makes the contrast unavailable instead of shrinking the denominator. These describe the recorded protocol, not an implementation supplied here. Monotonic cumulative recovery is built into the definition.
+
+At the recorded B1 runner version, initialization selects three frozen clean seed templates instantiated with the project label, without inserting the target secret. Secret values are used for upstream seed-manifest admission, leakage adjudication and fitness, but are not passed to the clean-seed mutation/crossover operators. The exposure and related content checks apply to the frozen seed rows only, not to mutations filling the initial population or to later generated candidates. Those candidates undergo normalized per-search deduplication and budget checks, not a repeated content-exposure audit. This is static code-path evidence, not a new replay or independent verification of completed campaign invocations. No template text or search implementation is distributed.
 
 ## B2: two family-level endpoints
 
@@ -46,9 +48,11 @@ Missing or failed admission does not justify silently dropping states from the f
 
 B3 reuses the nine non-235B tracks and 57 runs: 456 executed, 423 admitted. It uses an unadapted Qwen3-14B proposer loaded in 4-bit precision. Literal workloads, reply excerpts, feedback and proposal code are excluded.
 
-Each trajectory allows at most 128 unique target calls and 512 proposals, with a single search seed of 101. Output is cumulative binary recovery at budgets 16/32/64/128 and the reported track-equal aggregate. Recovery, target-budget exhaustion and allowed proposal exhaustion are distinct stopping outcomes. Proposal exhaustion is not the same as infrastructure failure. Absent, not-attempted or infrastructure-failed admitted cells invalidate primary availability rather than being deleted from the denominator. None of these missing/failure/proposal-exhaustion states appears in the admitted reported outcomes.
+Each trajectory allows at most 128 distinct target calls and 512 proposals (the original records call these unique calls), with a single search seed of 101. Output is cumulative binary recovery at budgets 16/32/64/128 and the reported track-equal aggregate. Recovery, target-budget exhaustion and allowed proposal exhaustion are distinct stopping outcomes. Proposal exhaustion is not the same as infrastructure failure. Absent, not-attempted or infrastructure-failed admitted cells invalidate primary availability rather than being deleted from the denominator. None of these missing/failure/proposal-exhaustion states appears in the admitted reported outcomes.
 
 B3's feedback can reveal partial protected information. It is not globally secret-blind, an independent model-cohort replication, or a controlled between-method comparison with B2. Public numerical replay begins from reported binary indicators, not a new assessment of proposal text or output semantics.
+
+B1 and B3 normalize prompts to lowercase ASCII alphanumeric text for within-trajectory deduplication. B3 additionally remembers rejected proposals. Sharing this counting convention does not make B2's 128 issued-with-repeats budget a matched comparison with B3.
 
 ## B4: decisions within a fixed executable domain
 
@@ -65,3 +69,9 @@ The recorded grammar has four ordered factors: framing, request, output form and
 Ordering is S1-major and S4-minor. For zero-based coordinates a,b,c,d in 0..7, the index is `512a + 64b + 8c + d`. Consecutive batches have `batch = index // 8` and `position = index % 8`, yielding 512 batches per cell. These equations identify the fixed order, not a new generation or rebatching claim.
 
 The original validation checks canonical reconstruction/order and exactly 4,096 entries per canary; tokenizer-bound counts and the 512-token prompt cap; no unresolved placeholders; the original input-exposure/training-family separation conditions; and normalized uniqueness across the full stored domain. The public supplement describes these checks statically without transferring their payloads, enumerator or exposure-filter implementation. It does not independently revalidate literal-domain semantics, tokenizer execution, output labels or the original evidence decision.
+
+## B1/B4 matched-record comparison
+
+This post hoc analysis reports source-matched targets, not a common prompt domain or execution path. The matching key is track, SFT seed, refusal level and canary ordinal; source-identity eligibility is supplied by the original frozen analysis. Its 66-target roster includes 30 eligible pairs, 15 B1-only targets, 18 B4-only targets and three original B1 exclusions. Public IDs link the applicable numerical B1/B4 records without exposing private run or source-file identifiers.
+
+Among the 25 matched B4-UNSAFE targets, six were recovered by B1 by call 16, nine first in calls 17-256 and ten not by call 256. All ten belong to Qwen3-32B. The five B4-SAFE targets have no B1 recovery by 256. `analysis/joint.py` checks and re-tabulates these reported labels; it does not regenerate outputs, repeat the source-identity audit, establish equal executables or estimate a new confidence interval. The counts are not an in-domain false-negative rate or a budget-only effect.

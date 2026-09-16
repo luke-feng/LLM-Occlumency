@@ -5,10 +5,10 @@ Code, data and numerical reproduction tools for **Checking Leakage Witnesses ver
 ## Project structure
 
 ```text
-analysis/           Numerical replay and integrity checks
+analysis/           Numerical replay, paired-table tabulation and integrity checks
 data/evidence_v3/   Reported evidence summaries
 data/observations/  Numerical A1/A2/A3 solver observations
-figures/            Five renderers and seven current/supplementary PDF outputs
+figures/            Six renderers and eight main/supplementary/legacy PDF outputs
 sat/                Classical CNF algorithms and optional CPU solver wrapper
 tests/              Real-data checks, failure cases and tiny truth tables
 docs/               Model construction and experiment definitions
@@ -32,7 +32,16 @@ Include the frozen bootstrap calculations:
 python analysis/replay.py --bootstrap
 ```
 
-Use `--only a1a2`, `--only a3`, `--only b1`, or `--only b3` to select an evidence family. Replay reads existing numerical records; it does not run a model or SAT solver.
+Use `--only a1a2`, `--only a3`, `--only b1`, `--only b3`, or `--only b1b4` to select an evidence family. Replay reads existing numerical records; it does not run a model or SAT solver. The B1/B4 option checks the frozen paired labels and re-tabulates them, without a new estimator or interval.
+
+Print the manuscript's matched tables from the public records:
+
+```sh
+python analysis/joint.py
+python analysis/joint.py --format json
+```
+
+This covers the main 2-by-3 table and the appendix's canary-ID rows. It does not repeat the original source-identity audit or run either model protocol.
 
 Scripts locate their inputs relative to their own files, not the working directory. For example, from elsewhere use `python /path/to/repository/analysis/replay.py`. No original checkout or external `PYTHONPATH` is required.
 
@@ -46,6 +55,7 @@ Scripts locate their inputs relative to their own files, not the working directo
 | B2 | Published primary, comparator, per-cell/per-track estimates and bootstrap ranges; aggregate identities and fixed-nine-track decomposition; **ranges summary-only** |
 | B3 | 57 ordered runs/423 admitted observations; track-equal binary-prefix estimates and frozen hierarchical bootstrap ranges |
 | B4 | 64 recorded outcomes: base 16 SAFE/0 UNSAFE; adapted 17 SAFE/31 UNSAFE; exact coverage arithmetic over the 31 recorded UNSAFE cells only |
+| B1/B4 matched records | Frozen 66-target identity roster, 30 eligible label pairs, the 2-by-3/2-by-2 tables and six model-state groups; public endpoint/label cross-checks and table replay, not a repeated source-identity audit |
 | Historical controls | E3 detector counts; D3's 48 accuracy and 38 paired-contrast summaries; sequence-score summaries and named benign examples; **summary-only** |
 
 B2 bootstrap ranges and historical D3 confidence intervals are not independently recalculated from primitive observations. Numerical replay also does not re-adjudicate the original model outputs or solver verdicts. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for estimands, uncertainty conventions and the scope of each check.
@@ -58,20 +68,33 @@ Plotting requires Python 3.11+ and Matplotlib 3.11.1:
 python -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python figures/results_map.py
-.venv/bin/python figures/plot_a1a2_main_v3.py
-.venv/bin/python figures/plot_main_evidence_b1_b4_v3.py
+.venv/bin/python figures/plot_main_evidence_b1_b4_focused.py
 ```
 
-These produce the three current paper figures: `results_map.pdf`, `a1a2_main_v3.pdf`, and `main_evidence_b1_b4_v3.pdf`. The empirical renderers read the stored public values with input hash checks and retain the paper's data/interval guards. B1-B3 uncertainty is labelled as bootstrap ranges; B4 shows decision counts for each model/state, separating the 16 base cells from the 48 adapted cells.
+These produce the two main-text figures: `results_map.pdf` (Figure 1) and `main_evidence_b1_b4_focused.pdf` (Figure 2). The focused renderer reads the stored public B1/B4 values with input hash checks. It preserves B1's five mean unrecovered-canary fractions and stored paired endpoint range. B4 shows decision counts under its fixed domain and batch execution, separating 16 base cells from 48 adapted cells.
 
-Four supplementary/legacy outputs remain available: `a1a2_censoring_v3.pdf`, `b1_nested_budget_v3.pdf`, `b2_tracks_v3.pdf`, and the older B1/B2 overview `main_evidence_v3.pdf`. Regenerate these with:
+The four-panel overview `main_evidence_b1_b4_v3.pdf` is now supplementary (Figure 3), `b2_tracks_v3.pdf` is Figure 4, and `a1a2_main_v3.pdf` is the appendix SAT figure (Figure 5). Three older outputs remain as references: `a1a2_censoring_v3.pdf`, `b1_nested_budget_v3.pdf`, and `main_evidence_v3.pdf`. Regenerate the supplementary/legacy layouts with:
 
 ```sh
+.venv/bin/python figures/plot_a1a2_main_v3.py
+.venv/bin/python figures/plot_main_evidence_b1_b4_v3.py
 .venv/bin/python figures/plot_experiments_v3.py
 .venv/bin/python figures/plot_main_evidence_v3.py
 ```
 
-Legacy figure labels may use "CI" for the same stored B1-B3 bootstrap ranges. No values or uncertainty endpoints are changed by the current presentation. Font or library differences can change PDF bytes without changing plotted values. The historical six-judge E3 ladder is not included; the E3 detector count arithmetic is available instead.
+Legacy figure labels may use "CI" for the same stored B1-B3 bootstrap ranges. No values or uncertainty endpoints are changed by the current presentation. Font or library differences can change PDF bytes without changing plotted values. The historical six-judge E3 ladder (paper Figure 6) is not included; the E3 detector count arithmetic is available instead.
+
+## Paper-to-package guide
+
+| Paper item | Public input | Entry point |
+|---|---|---|
+| Figure 1, complexity map | Diagram definitions | `figures/results_map.py` |
+| Figure 2, B1/B4 | `b1_analysis.json`, `b4_analysis.json` | `figures/plot_main_evidence_b1_b4_focused.py` |
+| Table 1 and Table 16, matched targets | `b1b4_joint_analysis.json`, checked against B1/B4 public labels | `analysis/joint.py` |
+| Appendix SAT/B2/B3 summaries | Existing observation and evidence files | `analysis/replay.py` and supplementary renderers above |
+| Table 15, fixed-record coverage | `b4_analysis.json`, `b4_coverage.json` | `analysis/replay.py --only b4` |
+
+JSON evidence files are under `data/evidence_v3/`. The paired comparison is post hoc and preserves distinct prompt domains and execution protocols; its ten discordant targets are all Qwen3-32B. It is not a budget-only effect or a same-domain false-negative rate.
 
 ## Classical SAT utilities
 
@@ -108,4 +131,5 @@ The reference creates a new adapter on your own data; it does not reconstruct th
 
 ## License
 
-License not yet specified.
+Original project source code and accompanying software documentation are released under the [MIT License](LICENSE).
+Data files and model weights are outside the scope of this software license. Third-party materials and dependencies retain their respective license terms.

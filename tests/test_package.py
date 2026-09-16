@@ -14,19 +14,28 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class PackageTests(unittest.TestCase):
     def test_current_package(self):
-        self.assertEqual(check_package(ROOT)['source_files'],48)
+        self.assertEqual(check_package(ROOT)['source_files'],53)
 
     def test_current_and_legacy_figure_inventory(self):
         self.assertEqual(CURRENT_FIGURES,{
-            'figures/results_map.pdf','figures/a1a2_main_v3.pdf',
-            'figures/main_evidence_b1_b4_v3.pdf'})
-        self.assertEqual(len(LEGACY_FIGURES),4)
+            'figures/results_map.pdf','figures/main_evidence_b1_b4_focused.pdf'})
+        self.assertEqual(len(LEGACY_FIGURES),6)
         self.assertFalse(CURRENT_FIGURES & LEGACY_FIGURES)
+
+    def test_software_license_scope(self):
+        license_text=(ROOT/'LICENSE').read_text()
+        readme=(ROOT/'README.md').read_text()
+        self.assertTrue(license_text.startswith('MIT License\n'))
+        self.assertIn('Permission is hereby granted, free of charge',license_text)
+        self.assertIn('[MIT License](LICENSE)',readme)
+        self.assertNotIn('License not yet specified',readme)
+        self.assertIn('Data files and model weights are outside',readme)
 
     def test_current_renderer_public_hash_bindings(self):
         # Parse constants only; core tests never import Matplotlib/render figures.
         for filename,constant in [('plot_a1a2_main_v3.py','A1A2_SHA256'),
-                                  ('plot_main_evidence_b1_b4_v3.py','SOURCES')]:
+                                  ('plot_main_evidence_b1_b4_v3.py','SOURCES'),
+                                  ('plot_main_evidence_b1_b4_focused.py','SOURCES')]:
             tree=ast.parse((ROOT/'figures'/filename).read_text())
             assignments=[node for node in tree.body if isinstance(node,ast.Assign)
                          and any(isinstance(target,ast.Name) and target.id==constant
@@ -34,8 +43,12 @@ class PackageTests(unittest.TestCase):
             self.assertEqual(len(assignments),1)
             value=ast.literal_eval(assignments[0].value)
             bindings={'a1a2_analysis.json':value} if constant=='A1A2_SHA256' else value
-            expected={'a1a2_analysis.json'} if constant=='A1A2_SHA256' else {
-                'b1_analysis.json','b2_analysis.json','b3_analysis.json','b4_analysis.json'}
+            if constant=='A1A2_SHA256':
+                expected={'a1a2_analysis.json'}
+            elif filename=='plot_main_evidence_b1_b4_focused.py':
+                expected={'b1_analysis.json','b4_analysis.json'}
+            else:
+                expected={'b1_analysis.json','b2_analysis.json','b3_analysis.json','b4_analysis.json'}
             self.assertEqual(set(bindings),expected)
             for name,digest in bindings.items():
                 raw=(ROOT/'data/evidence_v3'/name).read_bytes()
